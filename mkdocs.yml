@@ -21,7 +21,6 @@ theme:
     - navigation.tabs
     - navigation.expand
     - navigation.sections
-    - navigation.indexes
     - toc.integrate
     - content.code.annotate
     - content.code.copy
