@@ -101,3 +101,5 @@ nav:
     - "Fuzzy Logic and Fuzzy Inference Systems": Chapter2.md
   - Python:
     - "Python 3": Python 3.md
+    - "test": test.md
+    
