@@ -1,5 +1,9 @@
 # First Order Logic and Expert Systems
 
+## Table of Contents  
+* TOC  
+{:toc}
+
 ## What is Logic ?!?!
 
 + Logic is a systematic representation of information and knowledge to be communicated to machine.
