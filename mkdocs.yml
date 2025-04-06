@@ -97,6 +97,7 @@ markdown_extensions:
   - pymdownx.snippets
   - toc:
       permalink: true
+      title: On this page
   
 nav:
   - Home: index.md
