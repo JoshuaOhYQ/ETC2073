@@ -1,6 +1,7 @@
 ## Table of Contents
-* TOC
-{:toc}
+
+[TOC]
+
 
 # Python 3
 
