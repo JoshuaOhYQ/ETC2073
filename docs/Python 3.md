@@ -1,3 +1,7 @@
+## Table of Contents
+* TOC
+{:toc}
+
 # Python 3
 ???+ info "What is this section about?"
 
