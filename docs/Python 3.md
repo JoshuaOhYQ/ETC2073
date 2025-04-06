@@ -73,7 +73,7 @@
 
 </div>
 
-## Python Basics [TOC]
+## Python Basics 
 
 ### Printing 
 
