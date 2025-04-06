@@ -76,28 +76,23 @@ markdown_extensions:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.details
-  - attr_list
-  - md_in_html
   - pymdownx.tabbed:
       alternate_style: true
-  - footnotes
-  - md_in_html
-  - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
-  - md_in_html
-  - pymdownx.blocks.caption     
-  - def_list
   - pymdownx.tasklist:
       custom_checkbox: true
+  - pymdownx.blocks.caption
   - pymdownx.arithmatex:
       generic: true
+  - pymdownx.snippets
+  - def_list
+  - footnotes
   - abbr
   - attr_list
-  - pymdownx.snippets
+  - md_in_html
   - toc:
       permalink: true
       title: On this page
+
   
 nav:
   - Home: index.md
