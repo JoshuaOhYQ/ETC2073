@@ -42,3 +42,7 @@
 ## Python Basics {#python-basics}
 
 ### Printing {#printing}
+
+## Control Flow
+
+## Data Structures
