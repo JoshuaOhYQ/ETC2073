@@ -54,7 +54,7 @@ If you want to add notes or references for the block or line of code you have ju
     To insert a comment simply use # follow by the comments u want to add! - 
     ``` py
     #To insert comments 
-    print("Hello world) #This will output a statement 
+    print("Hello world") #This will output a statement 
     print("This is an amazing world") #This will output a statement 
     ```
     Output:
