@@ -39,13 +39,6 @@
     Dive into decorators, concurrency, and web development fundamentals.
 </div>
 
-## Python Basics 
-
-
-
-
-
-### Printing {#printing}
 
 
 
