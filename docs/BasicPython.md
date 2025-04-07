@@ -46,8 +46,24 @@ If you want to print or output something in python, there is different ways of d
         Hi there, I am Joshua and I am 19 years old!
         ```
 
+## Comments
+If you want to add notes or references for the block or line of code you have just written, you can use comments: 
 
+!!! example
 
+    To insert a comment simply use # follow by the comments u want to add! - 
+    ``` py
+    #To insert comments 
+    print("Hello world) #This will output a statement 
+    print("This is an amazing world") #This will output a statement 
+    ```
+    Output:
+    ```
+    Hello world 
+    This is an amazing world
+    ```
+    When the code is ran, comments will be ignored as it will not be part of the code! 
+    
 
 
 
