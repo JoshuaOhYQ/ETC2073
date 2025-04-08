@@ -172,16 +172,16 @@ Typecasting converts a variable from one data type to another. To do this, simpl
 
         === "String"
     
-        ```py
-        age = 106
-        age = str(age) 
-        age += "1" 
-        print(age)
-        ```
-        Output:
-        ```
-        106.01
-        ```
+            ```py
+            age = 106
+            age = str(age) 
+            age += "1" 
+            print(age)
+            ```
+            Output:
+            ```
+            106.01
+            ```
 
     === "Integers"
 
