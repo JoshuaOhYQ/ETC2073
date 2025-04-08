@@ -170,18 +170,18 @@ Typecasting converts a variable from one data type to another. To do this, simpl
    
     Different data types are used differently and can only be used specifically, for example arithmetic can only be used for float and integer and not strings:
 
-        === "String"
-    
-            ```py
-            age = 106
-            age = str(age) 
-            age += "1" 
-            print(age)
-            ```
-            Output:
-            ```
-            106.01
-            ```
+    === "Strings"
+
+        ```py
+        age = 106
+        age = str(age)
+        age += "1"
+        print(age)
+        ```
+        Output:
+        ```
+        106.01
+        ```
 
     === "Integers"
 
