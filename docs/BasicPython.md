@@ -72,11 +72,9 @@ There are four different data types in python, which are **integers, strings, bo
     === "String"
     
         ``` py
-        first_name = "Kid"
-        food = "Burger"
-        print(first_name)
-        print(f"Hello {first_name}")
-        print("Your favourite food is {food}")
+        name = "Mc Donalds"
+        print(type(name))
+     
         ```
         Output: 
         ```
@@ -127,5 +125,60 @@ There are four different data types in python, which are **integers, strings, bo
         ```
         You are a student!
         ```
+
+## Typecasting
+Typecasting converts a variable from one data type to another. To do this, simply equate the variable to itself and the data type you would like to change to: 
+
+!!! example
+
+    ```py
+    name = "Mc Donalds"
+    age = 106
+    gpa = 3.9
+    is_student = True
+
+    #Print the intial data type of the variables:
+    print(type(name))
+    print(type(age))
+    print(type(gpa))
+    print(type(is_student))
+
+    #What happens after typecasting:
+    gpa = int(gpa)
+    print(gpa)
+
+    age = float(age)
+    print(age)
+
+    age = str(age)
+    print(age)
+    print(type(age))
+    ```
+    Output:
+    ```
+    <class 'str'>
+    <class 'int'>
+    <class 'float'>
+    <class 'bool'>
+    3
+    106.0
+    106.0
+    <class 'str'>
+    ```
+
+!!! warning
+   
+    Different data types are used differently and can only be used specifically, for example arithmetic can only be used for float and integer and not strings:
+    
+    ```py
+    age = 106
+    age = str(age) 
+    age += "1" 
+    print(age)
+    ```
+    Output:
+    ```
+    106.01
+    ```
 
 
