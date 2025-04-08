@@ -131,40 +131,76 @@ Typecasting converts a variable from one data type to another. To do this, simpl
 
 !!! example
 
-    ```py
-    name = "Mc Donalds"
-    age = 106
-    gpa = 3.9
-    is_student = True
+    we can convert any variable from its original assigned data type to either **String, integer, float or boolean**. The way Python interprets **string, integer and float** is easy to understand and straightforward, but it is slightly different for **booleans**.    
 
-    #Print the intial data type of the variables:
-    print(type(name))
-    print(type(age))
-    print(type(gpa))
-    print(type(is_student))
+    === "Strings, integers and float"
+    
+        ```py
+        name = "Mc Donalds"
+        age = 106
+        gpa = 3.9
+        
+        #Print the intial data type of the variables:
+        print(type(name))
+        print(type(age))
+        print(type(gpa))
 
-    #What happens after typecasting:
-    gpa = int(gpa)
-    print(gpa)
+        #What happens after typecasting:
+        gpa = int(gpa)
+        print(gpa)
 
-    age = float(age)
-    print(age)
+        age = float(age)
+        print(age)
 
-    age = str(age)
-    print(age)
-    print(type(age))
-    ```
-    Output:
-    ```
-    <class 'str'>
-    <class 'int'>
-    <class 'float'>
-    <class 'bool'>
-    3
-    106.0
-    106.0
-    <class 'str'>
-    ```
+        age = str(age)
+        print(age)
+        print(type(age))
+        ```
+        Output:
+        ```
+        <class 'str'>
+        <class 'int'>
+        <class 'float'>
+        3
+        106.0
+        106.0
+        <class 'str'>
+        ```
+
+    === "Boolean"
+       
+        ```py
+        is_student = True
+        print(type(is_student))
+        ```
+        Output:
+        ```
+        <class 'bool'>
+        ```
+        
+        For boolean with respect to string, if there is any character assigned to the string variable, then it will output **True** - 
+    
+        ```py
+        name = "Mc Donalds"
+        name = bool(name) 
+        print(name)
+        ```
+        Output:
+        ```
+        True
+        ```
+        
+        But if there is no character assigned to the string variable, then it will output **False** -
+
+        ```py
+        name = ""
+        name = bool(name) 
+        print(name)
+        ```
+        Output:
+        ```
+        False
+        ```    
 
 !!! warning
    
