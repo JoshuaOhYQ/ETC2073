@@ -244,5 +244,38 @@ Typecasting converts a variable from one data type to another. To do this, simpl
         107.0
         ```
 
+## User input
+User input is a function that prompts the user to enter data into the Python program. Once the data have been entered, Python will accept the entered data as a **string**(1):
+{ .annotate }
 
+1. This is always the case, even if you entered an integer number or floating point number ❗
+
+!!! example
+
+    === "How it works"
+
+        ``` py
+        name = input("What is your name?: ")
+        print(f"Hello {name}!")
+        ```
+        Output: 
+        ```
+        What is your name?: John 
+        Hello John!
+        ```
+
+    === "Typecasting user input"
+
+        Since the original user input data type is always a string, if you would like to change the data type of that user input, simply enclose the input function with the type cast function:
+        
+        ``` py
+        age = int(input("How old are you?: "))
+        age += 1
+        print(f"You are {age} years old!")
+        ```
+        Output: 
+        ```
+        How old are you?: 30
+        You are 31 years old!
+        ```
 
