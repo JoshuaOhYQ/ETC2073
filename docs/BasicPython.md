@@ -131,7 +131,7 @@ Typecasting converts a variable from one data type to another. To do this, simpl
 
 !!! example
 
-    We can convert any variable from its original assigned data type to either **String, integer, float or boolean**. The way Python interprets **string, integer and float** is easy to understand and straightforward, but it is slightly different for **booleans**.    
+    We can convert any variable from its original assigned data type to either **string, integer, float or boolean**. The way Python interprets **string, integer and float** is easy to understand and straightforward, but it is slightly different for **booleans**.    
 
     === "Strings, integers and float"
     
