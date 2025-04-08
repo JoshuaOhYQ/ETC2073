@@ -131,7 +131,7 @@ Typecasting converts a variable from one data type to another. To do this, simpl
 
 !!! example
 
-    we can convert any variable from its original assigned data type to either **String, integer, float or boolean**. The way Python interprets **string, integer and float** is easy to understand and straightforward, but it is slightly different for **booleans**.    
+    We can convert any variable from its original assigned data type to either **String, integer, float or boolean**. The way Python interprets **string, integer and float** is easy to understand and straightforward, but it is slightly different for **booleans**.    
 
     === "Strings, integers and float"
     
@@ -178,7 +178,7 @@ Typecasting converts a variable from one data type to another. To do this, simpl
         <class 'bool'>
         ```
         
-        For boolean with respect to string, if there is any character assigned to the string variable, then it will output **True** - 
+        For boolean with respect to string, if there is any character assigned to the string variable, then it will output **True**:
     
         ```py
         name = "Mc Donalds"
@@ -190,7 +190,7 @@ Typecasting converts a variable from one data type to another. To do this, simpl
         True
         ```
         
-        But if there is no character assigned to the string variable, then it will output **False** -
+        But if there is no character assigned to the string variable, then it will output **False**:
 
         ```py
         name = ""
