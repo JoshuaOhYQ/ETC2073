@@ -6,7 +6,7 @@
 ## Course Overview
 
 <div class="grid cards" markdown>
--   :material-code-tags:{ .lg .middle } __[Python Basics](#python-basics)__
+-   :material-code-tags:{ .lg .middle } __[Python Basics](https://joshuaohyq.github.io/AI-Python/BasicPython/)__
     ---
     Master syntax, variables, and I/O operations. Perfect starting point for beginners.
 
