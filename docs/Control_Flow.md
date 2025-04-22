@@ -76,7 +76,7 @@ For the program to make a decision on whether to execute the code or not, we can
     
 
 ## Logical Operator
-For the program to evaluate multiple conditions at once, the operators of **or, and, not** can be used! How can we use them: 
+For the program to evaluate multiple conditions at once, the operators of **or, and, not** can be used! Here's how can we use them: 
 
 | **Operator**     | **Description**                          |
 | ----------- | ------------------------------------ |
