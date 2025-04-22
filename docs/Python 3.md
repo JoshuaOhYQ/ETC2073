@@ -10,7 +10,7 @@
     ---
     Master syntax, variables, and I/O operations. Perfect starting point for beginners.
 
--   :material-function-variant:{ .lg .middle } __[Control Flow](#control-flow)__
+-   :material-function-variant:{ .lg .middle } __[Control Flow](https://joshuaohyq.github.io/AI-Python/Control_Flow/)__
     ---
     Learn conditionals, loops, and functions - the building blocks of programming logic.
 
