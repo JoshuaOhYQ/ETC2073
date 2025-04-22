@@ -80,7 +80,7 @@ For the program to evaluate multiple conditions at once, the operators of **or, 
 
 !!! notes
 
-Here is the general definition for the logical operators **OR, AND, NOT**:
+    Here is the general definition for the logical operators **OR, AND, NOT**:
 
     | **Operator**     | **Description**                          |
     | ----------- | ------------------------------------ |
