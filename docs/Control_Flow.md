@@ -37,25 +37,38 @@ For the program to make a decision on whether to execute the code or not, we can
     === "String"
 
         ``` py
-        name = "Joshua"
-        age = 19
-        print(name)
-        print(age)
+        response = input("Would you like some food (Y/N)?: ")
+
+        if response == "Y":
+            print("Have some food!")
+
+        else:
+            print("No food for you!")
         ```
-        Output: 
+        Output (if the input = N): 
         ```
-        Joshua 
-        19
+        Would you like some food (Y/N): N
+        No food for you!
         ```
         
     === "Booleans"
 
         ``` py
-        name = "Joshua"
-        age = 19
-        print(f"Hi there, I am {name} and I am {age} years old!")
+        for_sale = True
+
+        if for_sale:
+            print("This item is for sale!")
+
+        else:
+            print("This item is not for sale!")
         ```
         Output: 
         ```
-        Hi there, I am Joshua and I am 19 years old!
+        This item is for sale!
         ```
+
+!!! Warning
+
+    The decision must be written in order from **top to bottom**, as Python will read the code line by line and will priotize the decision on top first!
+
+    
