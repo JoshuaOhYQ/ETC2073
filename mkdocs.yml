@@ -117,8 +117,8 @@ nav:
   - Python 3:
     - "Introduction": Python 3.md
     - "Python Basic": BasicPython.md
-    - "Test": test.md
     - "Control Flow": Control_Flow.md
+    
 
 
     
