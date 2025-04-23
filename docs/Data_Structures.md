@@ -57,6 +57,64 @@ Python provides many built-in methods for string manupulation. Here are some of 
         - ```str.partition(sep)``` - splits into 3 parts around first sep
         - ```str.rpartition(sep)``` - splits into 3 parts around last sep
 
+    === "Length finding"
+
+        - ```len(variable)``` - returns the length of the string variable
+
+!!! Example 
+
+    === "1"
+        ```py
+        name = "John"
+        result = len(name)
+        print(result)
+        ```
+        Output:
+        ```
+        4
+        ```
+
+
+    === "2"
+        ```py
+        name = "John"
+        result = name.find("o")
+        print(result)
+        ```
+        Output:
+        ```
+        1
+
+
+    === "3"
+        ```py
+        name = "John Cena"
+        result = name.rfind("n")
+        print(result)
+        ```
+        Output:
+        ```
+        7
+        ```
+
+
+    === "4"
+        ```py
+        name = "John Cena"
+        result = name.rfind("n")
+        print(result)
+        ```
+        Output:
+        ```
+        7
+        ```
+
+
+
+
+
+
+
 
 
 
