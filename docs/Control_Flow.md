@@ -75,7 +75,7 @@ For the program to make a decision on whether to execute the code or not, we can
 
     
 
-## Logical Operator
+## Logical Operators
 For the program to evaluate multiple conditions at once, the operators of **or, and, not** can be used! Here's how can we use them: 
 
 !!! notes
@@ -183,5 +183,105 @@ For the program to evaluate multiple conditions at once, the operators of **or, 
         ```
 
 
+## Conditional Expressions
+This is also known as the ternary operator. It is a one-line shortcut for the if-else statement. This allow Python to print or assign one of two values based on a condition:
+
+!!! notes
+
+    The formula is:
+    ```py
+    X if condition else Y
+    ```
+
+!!! example
+
+    === "OR"
+
+        ``` py
+        temp = 25
+        is_raining = False
+
+        if temp > 35 or temp < 0 or is_raining:
+            print("The outdoor event is cancelled")
+        else:
+            print("The outdoor event is still scheduled")
+
+        ```
+        Output:
+        ```
+        The outdoor event is still scheduled
+        ```
+
+        ``` py
+        temp = 25
+        is_raining = True
+
+        if temp > 35 or temp < 0 or is_raining:
+            print("The outdoor event is cancelled")
+        else:
+            print("The outdoor event is still scheduled")
+
+        ```
+        Output:
+        ```
+        The outdoor event is cancelled
+        ```
 
 
+    === "AND"
+
+        ``` py
+        temp = 30
+        is_sunny = True
+
+        if temp >= 28 and is_sunny:
+            print("It is HOT outside")
+            print("It is SUNNY")
+
+        elif temp <= 0 and is_sunny: 
+            print("It is COLD outside")
+            print("It is SUNNY")
+        ```
+        Output: 
+        ```
+        It is HOT outside
+        It is SUNNY
+        ```
+
+        ``` py
+        temp = -3
+        is_sunny = True
+
+        if temp >= 28 and is_sunny:
+            print("It is HOT outside")
+            print("It is SUNNY")
+
+        elif temp <= 0 and is_sunny: 
+            print("It is COLD outside")
+            print("It is SUNNY")
+        ```
+        Output: 
+        ```
+        It is COLD outside
+        It is SUNNY
+        ```
+        
+    === "NOT"
+
+        ``` py
+        temp = -3
+        is_sunny = False
+
+        if temp >= 28 and not is_sunny:
+            print("It is HOT outside")
+            print("It is CLOUDY")
+
+        elif temp <= 0 and not is_sunny: 
+            print("It is COLD outside")
+            print("It is CLOUDY")
+        ```
+        Output: 
+        ```
+        It is COLD outside
+        It is CLOUDY
+        ```
