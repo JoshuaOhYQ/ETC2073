@@ -108,6 +108,8 @@ For the program to evaluate multiple conditions at once, the operators of **or, 
         The outdoor event is still scheduled
         ```
 
+        ===============================================================================================================
+
         ``` py
         temp = 25
         is_raining = True
@@ -143,6 +145,7 @@ For the program to evaluate multiple conditions at once, the operators of **or, 
         It is HOT outside
         It is SUNNY
         ```
+        ===============================================================================================================
 
         ``` py
         temp = -3
