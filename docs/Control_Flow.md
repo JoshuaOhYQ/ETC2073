@@ -210,8 +210,86 @@ This is also known as the ternary operator. It is a one-line shortcut for the if
     Odd
     ```
 
+
 ## While Loops
 Loops allow us to execute a block of code repeatedly as long as a specified condition is met. If we use a while loop, Python will execute some code indented within the while loop, **WHILE** some condition remains true:
+
+!!! example
+
+    === "1"
+
+        ``` py
+        name = input("Enter your name: ")
+        
+        while name == "":
+            print("You did not enter your name!")
+            name = input("Enter your name: ")
+
+        print(f"Hello {name}")   
+        ```
+        Output:
+        ```
+        Enter your name:
+        You did not enter your name!
+        Enter your name:
+        You did not enter your name!
+        Enter your name: John
+        Hello John
+        ```
+
+
+    === "2"
+
+        ``` py
+        age = int(input("Enter your age: "))
+
+        while age < 0:
+            print("Age can't be negative")
+            age = int(input("Enter your age: "))
+        
+        print(f"You are {age} years old")
+        ```
+        Output: 
+        ```
+        Enter your age: -1
+        Age can't be negative
+        Enter your age: 21
+        You are 21 years old
+        ```
+
+        
+    === "3"
+
+        ``` py
+        food = input("Enter a food you like (q to quit): ")
+
+        while not food == "q":
+            print(f"You like {food}")
+            food = input("Enter another food you like (q to quit): ")
+        
+        print("bye")
+        ```
+        Output: 
+        ```
+        Enter a food you like (q to quit): pizza
+        You like pizza
+        Enter another food you like (q to quit): hotdog
+        You like hotdog
+        Enter another food you like (q to quit): q
+        bye
+        ```
+
+!!! Warning
+
+    Make sure the code has some way to exit out of the loop to prevent **infinite loop**!
+
+!!! Notes
+
+    Loops help automate repetitive tasks, making code more efficient and concise, but must be carefully used to prevent infinite loops!
+
+
+## For Loops
+Besides while loops, there is also for loops. It is used when the number of iterations is known in advance. When a for loop is used, Python execute a block of code a fixed number of times. You can iterate over a range, string, sequence, etc:
 
 !!! example
 
