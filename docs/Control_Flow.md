@@ -451,3 +451,79 @@ Besides while loops, there is also for loops. It is used when the number of iter
         20
         ```
 
+## Nested loops
+Nested loop is a loop inside another loop. It is used when you need to perform repetitive tasks within repetitive tasks, such as working with multi-dimensional data, for example matrices, tables, grids, etc. Python reads nested loop on a specific format:
+
+!!! notes
+    - The **outer loop** runs once, triggering the **inner loop** to complete all its iterations.
+    - This repeats until the outer loop finishes.
+    - In simple words, **inner loop** completes all iterations for each **outer loop** iteration.
+    - Total runs = (Outer loop iterations) × (Inner loop iterations)
+    - We can different format of nested loops, for example while loop inside of a while loop, for loop inside of a for loop, while loop inside of a for loop, etc. 
+
+!!! example
+
+    === "1"
+
+        ``` py
+        for x in range(1, 10):
+            for y in range(1, 10):
+                print(y, end="")
+            print()
+        ```
+        Output:
+        ```
+        123456789
+        123456789
+        123456789
+        ```
+
+
+    === "2"
+
+        ``` py
+        rows = int(input("Enter the # of rows: "))
+        columns = int(input("Enter the # of columns: "))
+        symbol = input("Enter a symbol to use: ")
+
+        for x in range(rows):
+            for y in range(columns):
+                print(symbol, end = "")
+            print()
+        ```
+        Output: 
+        ```
+        Enter the # of rows: 4
+        Enter the # of columns: 10
+        Enter a symbol to use: $
+        $$$$$$$$$$
+        $$$$$$$$$$
+        $$$$$$$$$$
+        $$$$$$$$$$
+        ```
+
+
+    === "3"
+
+        ``` py
+        i = 1
+        while <= 3:
+            j = 1
+            while j <= 2:
+                print(i, j)
+                j += 1
+            i += 1
+        ```
+        Output: 
+        ```
+        1 1
+        1 2
+        2 1
+        2 2
+        3 1
+        3 2
+        ```
+
+!!! Warnings
+
+    Avoid using too many nested loops (e.g., 3+ levels) as it can slow down your program and increase complexity!
