@@ -101,14 +101,50 @@ Python provides many built-in methods for string manupulation. Here are some of 
 
     === "4"
         ```py
-        name = "John Cena"
-        result = name.rfind("n")
+        name = "John"
+        result = name.upper()
         print(result)
         ```
         Output:
         ```
-        7
+        JOHN
         ```
+
+
+    === "5"
+        ```py
+        name = "John234"
+        result = name.isdigit()
+        print(result)
+        ```
+        Output:
+        ```
+        False
+        ```
+        ```py
+        name = "123"
+        result = name.isdigit()
+        print(result)
+        ```
+        Output:
+        ```
+        True
+        ```
+
+
+    === "6"
+        ```py
+        name = "John"
+        result = name.isalpha()
+        print(result)
+        ```
+        Output:
+        ```
+        True
+        ```
+
+
+
 
 
 
