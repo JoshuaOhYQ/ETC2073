@@ -108,7 +108,7 @@ For the program to evaluate multiple conditions at once, the operators of **or, 
         The outdoor event is still scheduled
         ```
 
-        ===============================================================================================================
+        Similary, if we change the **is_raining** boolean value :material-weather-lightning-rainy:: 
 
         ``` py
         temp = 25
@@ -145,7 +145,8 @@ For the program to evaluate multiple conditions at once, the operators of **or, 
         It is HOT outside
         It is SUNNY
         ```
-        ===============================================================================================================
+        
+        Similary, if we change the **temp** value :material-thermometer-lines:: 
 
         ``` py
         temp = -3
