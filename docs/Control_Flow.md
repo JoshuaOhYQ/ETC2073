@@ -459,7 +459,7 @@ Nested loop is a loop inside another loop. It is used when you need to perform r
     - This repeats until the outer loop finishes.
     - In simple words, **inner loop** completes all iterations for each **outer loop** iteration.
     - Total runs = (Outer loop iterations) × (Inner loop iterations)
-    - We can different format of nested loops, for example while loop inside of a while loop, for loop inside of a for loop, while loop inside of a for loop, etc. 
+    - We can have different format of nested loops, for example while loop inside of a while loop, for loop inside of a for loop, while loop inside of a for loop, etc. 
 
 !!! example
 
