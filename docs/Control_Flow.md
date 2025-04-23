@@ -488,7 +488,7 @@ Nested loop is a loop inside another loop. It is used when you need to perform r
 
         for x in range(rows):
             for y in range(columns):
-                print(symbol, end = "")
+                print(symbol, end="")
             print()
         ```
         Output: 
