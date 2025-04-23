@@ -84,6 +84,7 @@ Python provides many built-in methods for string manupulation. Here are some of 
         Output:
         ```
         1
+        ```
 
 
     === "3"
