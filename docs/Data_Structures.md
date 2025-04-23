@@ -168,7 +168,81 @@ Python provides many built-in methods for string manupulation. Here are some of 
 
 
 ## String Indexing
+This allows us to access individual characters or elements in a string or sequence using their position and indexing operator:
 
+!!! info
+
+    Python supports both positive indexing (left to right) and negative indexing(right to left).
+
+!!! example
+
+    === "Positive Indexing"
+
+        Basically, it starts at ```0``` for the first character and increases by ```1``` for each subsequent character:
+
+        ```py 
+        text = "Python"
+        print(text[0])
+        print(text[1])
+        print(text[5])
+        ```
+        Output:
+        ```
+        P
+        y
+        n
+        ```
+
+
+    === "Negative Indexing"
+
+        Basically, it starts at ```-1``` for the last character and decreases by ```1``` for each preceding character:
+
+        ```py 
+        text = "Python"
+        print(text[-1])
+        print(text[-2])
+        print(text[-6])
+        ```
+        Output:
+        ```
+        n
+        o
+        P
+        ```
+
+
+    === "String Slicing (Extracting Substrings)"
+
+        You can extract a substring using the syntax:
+        ```string[start:end:step]```
+
+        - ```start``` → Index to begin (inclusive, default ```0```)
+        - ```end``` → Index to stop (exclusive, default ```len(string)```)
+        - ```step``` → Step size (default ```1```)
+
+        ```py 
+        text = "Python Programming"
+
+        # Get first 6 characters
+        print(text[0:6])
+        
+        # Get from index 7 to end
+        print(text[7:])
+        
+        # Get every 2nd character
+        print(text[::2])
+
+        # Reverse a string
+        print(text[::-1])
+        ```
+        Output:
+        ```
+        Python
+        Programming
+        Pto rgamn
+        gnimmargorP nohtyP
+        ```
 
 
 
