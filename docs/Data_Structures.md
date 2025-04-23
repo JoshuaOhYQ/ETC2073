@@ -172,7 +172,7 @@ This allows us to access individual characters or elements in a string or sequen
 
 !!! info
 
-    Python supports both positive indexing (left to right) and negative indexing(right to left).
+    Python supports both positive indexing (left to right) and negative indexing (right to left).
 
 !!! example
 
