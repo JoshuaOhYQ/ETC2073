@@ -144,6 +144,28 @@ Python provides many built-in methods for string manupulation. Here are some of 
         ```
 
 
+    === "7"
+        ```py
+        phone_number = "012-3456789"
+        result = phone_number.replace("-", " ")
+        print(result)
+        ```
+        Output:
+        ```
+        012 3456789
+        ```
+
+
+!!! Tip "To view more string methods"
+
+    === "Direct from Python"
+        ```py
+        print(help(str))
+        ```
+
+    === "From website"
+        Full reference at Python Docs:
+        https://docs.python.org/3/library/stdtypes.html#string-methods
 
 
 
@@ -167,17 +189,6 @@ Python provides many built-in methods for string manupulation. Here are some of 
 
 
 
-
-
-
-
-
-
-
-
-!!! Warning
-
-    The decision must be written in order from **top to bottom**, as Python will read the code line by line and will priotize the decision on top first!
 
 
 
