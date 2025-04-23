@@ -293,73 +293,93 @@ Besides while loops, there is also for loops. It is used when the number of iter
 
 !!! example
 
-    === "1"
+    === "Range Function"
 
         ``` py
-        name = input("Enter your name: ")
-        
-        while name == "":
-            print("You did not enter your name!")
-            name = input("Enter your name: ")
-
-        print(f"Hello {name}")   
+        for x in range(1, 11):
+            print(x) 
         ```
         Output:
         ```
-        Enter your name:
-        You did not enter your name!
-        Enter your name:
-        You did not enter your name!
-        Enter your name: John
-        Hello John
+        1
+        2
+        3
+        4
+        5
+        6
+        7
+        8
+        9
+        10
+        ```
+
+        What if we want it to print backwards:
+
+
+        ``` py
+        for x in reversed(range(1, 11)):
+            print(x) 
+
+        print("Happy New Year")
+        ```
+        Output:
+        ```
+        10
+        9
+        8
+        7
+        6
+        5
+        4
+        3
+        2
+        1
+        Happy New Year
+        ```
+        
+        What if we want to increase the step for counting x:
+
+        ``` py
+        for x in range(1, 11, 2):
+            print(x) 
+        ```
+        Output:
+        ```
+        1
+        3
+        5
+        7
+        9
         ```
 
 
-    === "2"
+    === "String"
 
         ``` py
-        age = int(input("Enter your age: "))
+        credit_card = "1234-5678-9012-3456"
 
-        while age < 0:
-            print("Age can't be negative")
-            age = int(input("Enter your age: "))
-        
-        print(f"You are {age} years old")
+        for x in credit_card:
+            print(x)
         ```
         Output: 
         ```
-        Enter your age: -1
-        Age can't be negative
-        Enter your age: 21
-        You are 21 years old
+        1
+        2
+        3
+        4
+        -
+        5
+        6
+        7
+        8
+        -
+        9
+        0
+        1
+        2
+        -
+        3
+        4
+        5
+        6
         ```
-
-        
-    === "3"
-
-        ``` py
-        food = input("Enter a food you like (q to quit): ")
-
-        while not food == "q":
-            print(f"You like {food}")
-            food = input("Enter another food you like (q to quit): ")
-        
-        print("bye")
-        ```
-        Output: 
-        ```
-        Enter a food you like (q to quit): pizza
-        You like pizza
-        Enter another food you like (q to quit): hotdog
-        You like hotdog
-        Enter another food you like (q to quit): q
-        bye
-        ```
-
-!!! Warning
-
-    Make sure the code has some way to exit out of the loop to prevent **infinite loop**!
-
-!!! Notes
-
-    Loops help automate repetitive tasks, making code more efficient and concise, but must be carefully used to prevent infinite loops!
