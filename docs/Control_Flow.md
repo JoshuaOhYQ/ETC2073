@@ -145,7 +145,7 @@ For the program to evaluate multiple conditions at once, the operators of **or, 
         It is HOT outside
         It is SUNNY
         ```
-        
+
         Similary, if we change the **temp** value :material-thermometer-lines:: 
 
         ``` py
@@ -188,7 +188,7 @@ For the program to evaluate multiple conditions at once, the operators of **or, 
 
 
 ## Conditional Expressions
-This is also known as the ternary operator. It is a one-line shortcut for the if-else statement. This allow Python to print or assign one of two values based on a condition:
+This is also known as the ternary operator. It is a one-line shortcut for the if-else statement. So, instead of writing multiple lines of if-else codes, we can reduce the lines of codes with this expression! This allow Python to print or assign one of two values based on a condition:
 
 !!! notes
 
@@ -199,93 +199,89 @@ This is also known as the ternary operator. It is a one-line shortcut for the if
 
 !!! example
 
-    === "OR"
+    ```py
+    num = 5 
+    result = "Even" if num % 2 == 0 else "Odd"
+
+    print(result)
+    ```
+    Output:
+    ```
+    Odd
+    ```
+
+## While Loops
+Loops allow us to execute a block of code repeatedly as long as a specified condition is met. If we use a while loop, Python will execute some code indented within the while loop, **WHILE** some condition remains true:
+
+!!! example
+
+    === "1"
 
         ``` py
-        temp = 25
-        is_raining = False
-
-        if temp > 35 or temp < 0 or is_raining:
-            print("The outdoor event is cancelled")
-        else:
-            print("The outdoor event is still scheduled")
-
-        ```
-        Output:
-        ```
-        The outdoor event is still scheduled
-        ```
-
-        ``` py
-        temp = 25
-        is_raining = True
-
-        if temp > 35 or temp < 0 or is_raining:
-            print("The outdoor event is cancelled")
-        else:
-            print("The outdoor event is still scheduled")
-
-        ```
-        Output:
-        ```
-        The outdoor event is cancelled
-        ```
-
-
-    === "AND"
-
-        ``` py
-        temp = 30
-        is_sunny = True
-
-        if temp >= 28 and is_sunny:
-            print("It is HOT outside")
-            print("It is SUNNY")
-
-        elif temp <= 0 and is_sunny: 
-            print("It is COLD outside")
-            print("It is SUNNY")
-        ```
-        Output: 
-        ```
-        It is HOT outside
-        It is SUNNY
-        ```
-
-        ``` py
-        temp = -3
-        is_sunny = True
-
-        if temp >= 28 and is_sunny:
-            print("It is HOT outside")
-            print("It is SUNNY")
-
-        elif temp <= 0 and is_sunny: 
-            print("It is COLD outside")
-            print("It is SUNNY")
-        ```
-        Output: 
-        ```
-        It is COLD outside
-        It is SUNNY
-        ```
+        name = input("Enter your name: ")
         
-    === "NOT"
+        while name == "":
+            print("You did not enter your name!")
+            name = input("Enter your name: ")
+
+        print(f"Hello {name}")   
+        ```
+        Output:
+        ```
+        Enter your name:
+        You did not enter your name!
+        Enter your name:
+        You did not enter your name!
+        Enter your name: John
+        Hello John
+        ```
+
+
+    === "2"
 
         ``` py
-        temp = -3
-        is_sunny = False
+        age = int(input("Enter your age: "))
 
-        if temp >= 28 and not is_sunny:
-            print("It is HOT outside")
-            print("It is CLOUDY")
-
-        elif temp <= 0 and not is_sunny: 
-            print("It is COLD outside")
-            print("It is CLOUDY")
+        while age < 0:
+            print("Age can't be negative")
+            age = int(input("Enter your age: "))
+        
+        print(f"You are {age} years old")
         ```
         Output: 
         ```
-        It is COLD outside
-        It is CLOUDY
+        Enter your age: -1
+        Age can't be negative
+        Enter your age: 21
+        You are 21 years old
         ```
+
+        
+    === "3"
+
+        ``` py
+        food = input("Enter a food you like (q to quit): ")
+
+        while not food == "q":
+            print(f"You like {food}")
+            food = input("Enter another food you like (q to quit): ")
+        
+        print("bye")
+        ```
+        Output: 
+        ```
+        Enter a food you like (q to quit): pizza
+        You like pizza
+        Enter another food you like (q to quit): hotdog
+        You like hotdog
+        Enter another food you like (q to quit): q
+        bye
+        ```
+
+!!! Warning
+
+    Make sure the code has some way to exit out of the loop to prevent **infinite loop**!
+
+!!! Notes
+
+    Loops help automate repetitive tasks, making code more efficient and concise, but must be carefully used to prevent infinite loops!
