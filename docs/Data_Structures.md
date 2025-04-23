@@ -164,8 +164,10 @@ Python provides many built-in methods for string manupulation. Here are some of 
         ```
 
     === "From website"
-        Full reference at Python Docs:
-        https://docs.python.org/3/library/stdtypes.html#string-methods
+        Full reference at [Python Docs](https://docs.python.org/3/library/stdtypes.html#string-methods)
+
+
+## String Indexing
 
 
 
