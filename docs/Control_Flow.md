@@ -524,7 +524,7 @@ Nested loop is a loop inside another loop. It is used when you need to perform r
         3 2
         ```
 
-!!! Warnings
+!!! Warning
 
     Avoid using too many nested loops (e.g., 3+ levels) as it can slow down your program and increase complexity!
 
@@ -532,4 +532,3 @@ Nested loop is a loop inside another loop. It is used when you need to perform r
 
 
 
-    
