@@ -94,67 +94,94 @@ For the program to evaluate multiple conditions at once, the operators of **or, 
     === "OR"
 
         ``` py
-        age = int(input("Enter your age: "))
+        temp = 25
+        is_raining = False
 
-        if age >= 100:
-            print("You are too old to sign up!")
-
-        elif age >= 18;
-            print("You are now signed up!")
-
-        elif age <= 0:
-            print("You haven't been borned yet!)
-
+        if temp > 35 or temp < 0 or is_raining:
+            print("The outdoor event is cancelled")
         else:
-            print("You are too young to sign up!")
+            print("The outdoor event is still scheduled")
+
         ```
-        Output (if the input = 100):
+        Output:
         ```
-        Enter your age: 100
-        You are too old to sign up!
+        The outdoor event is still scheduled
         ```
-        Output (if the input = 30):
+
+        ``` py
+        temp = 25
+        is_raining = True
+
+        if temp > 35 or temp < 0 or is_raining:
+            print("The outdoor event is cancelled")
+        else:
+            print("The outdoor event is still scheduled")
+
         ```
-        Enter your age: 30
-        You are now signed up!
+        Output:
         ```
-        
+        The outdoor event is cancelled
+        ```
+
 
     === "AND"
 
         ``` py
-        response = input("Would you like some food (Y/N)?: ")
+        temp = 30
+        is_sunny = True
 
-        if response == "Y":
-            print("Have some food!")
+        if temp >= 28 and is_sunny:
+            print("It is HOT outside")
+            print("It is SUNNY")
 
-        else:
-            print("No food for you!")
+        elif temp <= 0 and is_sunny: 
+            print("It is COLD outside")
+            print("It is SUNNY")
         ```
-        Output (if the input = N): 
+        Output: 
         ```
-        Would you like some food (Y/N): N
-        No food for you!
+        It is HOT outside
+        It is SUNNY
+        ```
+
+        ``` py
+        temp = -3
+        is_sunny = True
+
+        if temp >= 28 and is_sunny:
+            print("It is HOT outside")
+            print("It is SUNNY")
+
+        elif temp <= 0 and is_sunny: 
+            print("It is COLD outside")
+            print("It is SUNNY")
+        ```
+        Output: 
+        ```
+        It is COLD outside
+        It is SUNNY
         ```
         
     === "NOT"
 
         ``` py
-        for_sale = True
+        temp = -3
+        is_sunny = False
 
-        if for_sale:
-            print("This item is for sale!")
+        if temp >= 28 and not is_sunny:
+            print("It is HOT outside")
+            print("It is CLOUDY")
 
-        else:
-            print("This item is not for sale!")
+        elif temp <= 0 and not is_sunny: 
+            print("It is COLD outside")
+            print("It is CLOUDY")
         ```
         Output: 
         ```
-        This item is for sale!
+        It is COLD outside
+        It is CLOUDY
         ```
 
-!!! Warning
 
-    The decision must be written in order from **top to bottom**, as Python will read the code line by line and will priotize the decision on top first!
 
 
