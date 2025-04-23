@@ -383,3 +383,71 @@ Besides while loops, there is also for loops. It is used when the number of iter
         5
         6
         ```
+
+## Continue-Break
+```continue``` and ```break``` are loop control statements used to modify the flow of loops (```for``` and ```while```):
+
+!!! example
+
+    === "break"
+
+        This statement stops the loop immediately and exits it, even if the loop condition is still true. Basically it is used to terminate a loop prematurely:
+
+        ``` py
+        for x in range(1, 21):
+            if x == 13:
+                break
+            else:
+                print(x)
+        ```
+        Output:
+        ```
+        1
+        2
+        3
+        4
+        5
+        6
+        7
+        8
+        9
+        10
+        11
+        12
+        ```
+
+
+    === "continue"
+
+        This statement skips the current iteration and moves to the next one. Basically, it is used to skip specific values without exiting the loop entirely:
+
+        ``` py
+        for x in range(1, 21):
+            if x == 13:
+                continue
+            else:
+                print(x)
+        ```
+        Output: 
+        ```
+        1
+        2
+        3
+        4
+        5
+        6
+        7
+        8
+        9
+        10
+        11
+        12
+        14
+        15
+        16
+        17
+        18
+        19
+        20
+        ```
+
