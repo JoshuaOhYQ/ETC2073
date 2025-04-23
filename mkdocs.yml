@@ -118,6 +118,8 @@ nav:
     - "Introduction": Python 3.md
     - "Python Basic": BasicPython.md
     - "Control Flow": Control_Flow.md
+    - "Data Structures": Data_Structures.md
+    
     
 
 
