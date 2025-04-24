@@ -339,7 +339,97 @@ Python offers several built-in collection (1) types, each with different charact
 
 !!! example "Comparisons with examples"
 
-    
+    === "Lists"
+
+        - **Mutable** (can be changed after creation)
+        - **Ordered** (maintains insertion order)
+        - **Allows duplicates**
+        - Syntax: ```[]``` or ```list()```
+
+        ```py 
+        # Creating a list
+        fruits = ['apple', 'banana', 'cherry']
+        numbers = list(range(5))
+
+        # Common operations
+        fruits.append('orange')       # Add item
+        fruits.remove('banana')       # Remove item
+        fruits[1] = 'blueberry'       # Modify item
+        print(fruits[0])              # Access item
+        print(fruits)                 # Access list
+        ```
+        Output:
+        ```
+        apple
+        ['apple', 'blueberry', 'orange']
+        ```
+        
+
+    === "Tuples"
+
+        - **Immutable** (cannot be changed after creation)
+        - **Ordered** (maintains insertion order)
+        - **Allows duplicates**
+        - Syntax: ```()``` or ```tuple()```
+
+        ```py 
+        # Creating a tuple
+        colors = ('red', 'green', 'blue')
+        coordinates = tuple([1, 2, 3])
+
+        # Common operations
+        print(colors[1])              # Access item (green)
+        print(colors.count('red'))    # Count occurrences
+        print(len(colors))            # Get length
+
+        # Tuples are often used for fixed data (Example Scenario)
+        point = (3, 4)  # x, y coordinates
+        ```
+        Output:
+        ```
+        green
+        1
+        3
+        ```
+
+
+    === "Sets"
+
+        - **Mutable** (can add/remove items)
+        - **Unordered** (no index positions)
+        - **Allows duplicates** (automatically removes duplicates)
+        - Syntax: ```{}``` or ```set()```
+
+        ```py 
+        # Creating a set
+        unique_numbers = {1, 2, 3, 3, 4}  # {1, 2, 3, 4}
+        letters = set('hello')            # {'h', 'e', 'l', 'o'}
+
+        # Common operations
+        unique_numbers.add(5)      # Add item
+        unique_numbers.remove(2)   # Remove item
+        letters.add('p')           # Add item
+        letters.remove('e')   # Remove item
+
+        print(unique_numbers)
+        print(letters)
+        ```
+        Output:
+        ```
+        {1, 3, 4, 5}
+        {'p', 'l', 'h', 'o'}
+        ```
+
+!!! tip
+
+    **Key Differences**:
+
+        
+
+
+   
+
+
 
 
 
