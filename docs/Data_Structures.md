@@ -398,6 +398,13 @@ Python offers several built-in collection (1) types, each with different charact
         print(colors.count('red'))    # Count occurrences
         print(len(colors))            # Get length
         print('red' in colors)        # Find if element exists
+        print(colors.index("blue"))   # Find index for element
+
+        print()
+
+        # Iterate over a for loop (To print every element)
+        for color in colors:
+            print(color)
 
         # Tuples are often used for fixed data (Example Scenario)
         point = (3, 4)  # x, y coordinates
@@ -408,6 +415,11 @@ Python offers several built-in collection (1) types, each with different charact
         1
         3
         True
+        2
+
+        red 
+        green 
+        blue
         ```
 
 
