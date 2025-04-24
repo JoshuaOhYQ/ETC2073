@@ -424,6 +424,28 @@ Python offers several built-in collection (1) types, each with different charact
 
     **Key Differences**:
 
+    | Feature      | List         | Tuple        | Set          |
+    |--------------|--------------|--------------|--------------|
+    | Mutability   | Mutable      | Immutable    | Mutable      |
+    | Order        | Ordered      | Ordered      | Unordered    |
+    | Duplicates   | Allowed      | Allowed      | Not allowed  |
+    | Syntax       | `[ ]`        | `( )`        | `{ }`        |
+    | Use Case     | Dynamic data | Fixed data   | Unique items |
+
+    **When to use each collection cases**: 
+    - Use **lists** when you need an ordered collection that may change
+    - Use **tuples** for fixed data that shouldn't change (like coordinates)
+    - Use **sets** when you need to ensure uniqueness or perform set operations
+
+!!! Danger "Additional Information"
+
+    All three **(list, tuple and set)** support iteration and can be converted between each other:
+
+    ```py
+    my_list = [1, 2, 3]
+    my_tuple = tuple(my_list)
+    my_set = set(my_list)
+    ```
         
 
 
