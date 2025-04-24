@@ -451,9 +451,10 @@ Python offers several built-in collection (1) types, each with different charact
     | Use Case     | Dynamic data | Fixed data   | Unique items |
 
     **When to use each collection cases**: 
-    * Use **lists** when you need an ordered collection that may change
-    * Use **tuples** for fixed data that shouldn't change (like coordinates)
-    * Use **sets** when you need to ensure uniqueness or perform set operations
+
+    - Use **lists** when you need an ordered collection that may change
+    - Use **tuples** for fixed data that shouldn't change (like coordinates)
+    - Use **sets** when you need to ensure uniqueness or perform set operations
 
     **To access more methods and attributes avalaible to collection**:
     
