@@ -330,6 +330,17 @@ Format specifiers in Python are used to control how values are formatted based o
         he
         ```
 
+## Lists, sets and tuples
+
+Python offers several built-in collection (1) types, each with different characteristics. Here's a comparison of lists, sets, and tuples:
+{ .annotate }
+
+1. Collection: a single "variable" used to store multiple values:material-content-save-all-outline:
+
+!!! example "Comparisons with examples"
+
+    
+
 
 
 
