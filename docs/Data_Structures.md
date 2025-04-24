@@ -245,6 +245,106 @@ This allows us to access individual characters or elements in a string or sequen
         ```
 
 
+## Format Specifiers
+Format specifiers in Python are used to control how values are formatted based on waht flags are inserted. They allow you to specify things like alignment, padding, precision, and type representation. Python provides several ways to use format specifiers:
+
+!!! info "Common Format Specifier"
+
+    The general syntax is:
+    
+    ```[fill][align][sign][#][0][width][grouping][.precision][type]```
+
+    where,
+
+    - Fill: Character to pad with (default is space)
+    - Align: ```<``` (left), ```>``` (right), ```^``` (center), ```=```(pad after sign)
+    - Sign: ```+``` (show sign for both + and -), ```-``` (only for -), space (leading space for +)
+    - Width: Minimum field width
+    - Precision: For floating point, number of digits after decimal
+    - Type:
+        * d, i: integer
+        * f, F: float
+        * e, E: scientific notation
+        * g, G: general format (auto switches between f and e)
+        * %: percentage
+        * x, X: hexadecimal
+        * o: octal
+        * b: binary
+        * c: character (unicode code point)
+
+Examples
+
+!!! example
+
+    === "Positive Indexing"
+
+        Basically, it starts at ```0``` for the first character and increases by ```1``` for each subsequent character:
+
+        ```py 
+        text = "Python"
+        print(text[0])
+        print(text[1])
+        print(text[5])
+        ```
+        Output:
+        ```
+        P
+        y
+        n
+        ```
+
+
+    === "Negative Indexing"
+
+        Basically, it starts at ```-1``` for the last character and decreases by ```1``` for each preceding character:
+
+        ```py 
+        text = "Python"
+        print(text[-1])
+        print(text[-2])
+        print(text[-6])
+        ```
+        Output:
+        ```
+        n
+        o
+        P
+        ```
+
+
+    === "String Slicing (Extracting Substrings)"
+
+        You can extract a substring using the syntax:
+        ```string[start:end:step]```
+
+        - ```start``` → Index to begin (inclusive, default ```0```)
+        - ```end``` → Index to stop (exclusive, default ```len(string)```)
+        - ```step``` → Step size (default ```1```)
+
+        ```py 
+        text = "Python Programming"
+
+        # Get first 6 characters
+        print(text[0:6])
+        
+        # Get from index 7 to end
+        print(text[7:])
+        
+        # Get every 2nd character
+        print(text[::2])
+
+        # Reverse a string
+        print(text[::-1])
+        ```
+        Output:
+        ```
+        Python
+        Programming
+        Pto rgamn
+        gnimmargorP nohtyP
+        ```
+
+
 
 
 
