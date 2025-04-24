@@ -459,7 +459,7 @@ Python offers several built-in collection (1) types, each with different charact
     | Mutability   | Mutable      | Immutable    | Mutable      |
     | Order        | Ordered      | Ordered      | Unordered    |
     | Duplicates   | Allowed      | Allowed      | Not allowed  |
-    | Syntax       | `[ ]`        | `( )`        | `{ }`        |
+    | Syntax       | `[]`        | `()`        | `{}`        |
     | Use Case     | Dynamic data | Fixed data   | Unique items |
 
     **When to use each collection cases**: 
