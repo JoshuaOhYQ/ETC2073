@@ -272,7 +272,6 @@ Format specifiers in Python are used to control how values are formatted based o
         * b: binary
         * c: character (unicode code point)
 
-Examples
 
 !!! example
 
