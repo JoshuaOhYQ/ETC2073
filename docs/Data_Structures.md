@@ -357,11 +357,27 @@ Python offers several built-in collection (1) types, each with different charact
         fruits[1] = 'blueberry'       # Modify item
         print(fruits[0])              # Access item
         print(fruits)                 # Access list
+        print(fruits[0:1])            # Print list within a range
+        print(fruits[::2])            # Print list with a step
+        print(fruits[::-1])           # Print list backwards
+
+        print()
+
+        # Iterate over a for loop (To print every element)
+        for fruit in fruits:
+            print(fruit)
         ```
         Output:
         ```
         apple
         ['apple', 'blueberry', 'orange']
+        ['apple', 'blueberry']
+        ['apple', 'orange']
+        ['orange', 'blueberry', 'apple']
+
+        apple
+        blueberry
+        orange
         ```
         
 
@@ -381,6 +397,7 @@ Python offers several built-in collection (1) types, each with different charact
         print(colors[1])              # Access item (green)
         print(colors.count('red'))    # Count occurrences
         print(len(colors))            # Get length
+        print('red' in colors)        # Find if element exists
 
         # Tuples are often used for fixed data (Example Scenario)
         point = (3, 4)  # x, y coordinates
@@ -390,6 +407,7 @@ Python offers several built-in collection (1) types, each with different charact
         green
         1
         3
+        True
         ```
 
 
@@ -436,6 +454,14 @@ Python offers several built-in collection (1) types, each with different charact
     - Use **lists** when you need an ordered collection that may change
     - Use **tuples** for fixed data that shouldn't change (like coordinates)
     - Use **sets** when you need to ensure uniqueness or perform set operations
+
+    **To access more methods and attributes avalaible to collection**:
+    
+    ```py
+    fruits = ['apple', 'orange', 'banana', 'coconut']
+    print(dir(fruits))                        # Lists
+    print(help(fruits))                       # Description 
+    ```
 
 !!! Danger "Additional Information"
 
