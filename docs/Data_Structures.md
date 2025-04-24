@@ -276,72 +276,59 @@ Examples
 
 !!! example
 
-    === "Positive Indexing"
+    Format specifiers provide powerful control over how values are displayed in Python strings.
 
-        Basically, it starts at ```0``` for the first character and increases by ```1``` for each subsequent character:
+    === "Number formatting"
 
         ```py 
-        text = "Python"
-        print(text[0])
-        print(text[1])
-        print(text[5])
+        print(f"{1234:10d}")      # '      1234' (right-aligned, width 10)
+        print(f"{1234:<10d}")     # '1234      ' (left-aligned)
+        print(f"{1234:^10d}")     # '   1234   ' (centered)
+        print(f"{1234:010d}")     # '0000001234' (zero-padded)
+        print(f"{1234:,d}")       # '1,234' (with thousands separator)
+        print(f"Binary: {10:b}")          # Output: Binary: 1010
         ```
         Output:
         ```
-        P
-        y
-        n
+              1234
+        1234      
+           1234   
+        0000001234
+        1,234
+        1010
         ```
-
-
-    === "Negative Indexing"
-
-        Basically, it starts at ```-1``` for the last character and decreases by ```1``` for each preceding character:
-
-        ```py 
-        text = "Python"
-        print(text[-1])
-        print(text[-2])
-        print(text[-6])
-        ```
-        Output:
-        ```
-        n
-        o
-        P
-        ```
-
-
-    === "String Slicing (Extracting Substrings)"
-
-        You can extract a substring using the syntax:
-        ```string[start:end:step]```
-
-        - ```start``` → Index to begin (inclusive, default ```0```)
-        - ```end``` → Index to stop (exclusive, default ```len(string)```)
-        - ```step``` → Step size (default ```1```)
-
-        ```py 
-        text = "Python Programming"
-
-        # Get first 6 characters
-        print(text[0:6])
         
-        # Get from index 7 to end
-        print(text[7:])
-        
-        # Get every 2nd character
-        print(text[::2])
 
-        # Reverse a string
-        print(text[::-1])
+
+    === "Float formatting"
+
+        ```py 
+        print(f"{3.14159:.2f}")   # '3.14' (2 decimal places)
+        print(f"{3.14159:10.2f}") # '      3.14' (width 10, 2 decimals)
+        print(f"{3.14159:e}")     # '3.141590e+00' (scientific notation)
         ```
         Output:
         ```
-        Python
-        Programming
-        Pto rgamn
-        gnimmargorP nohtyP
+        3.14
+              3.14
+        3.141590e+00
+        ```
+
+
+    === "String formatting"
+
+        ```py 
+        print(f"{'hello':10s}")   # 'hello     ' (left-aligned, width 10)
+        print(f"{'hello':>10s}")  # '     hello' (right-aligned)
+        print(f"{'hello':^10s}")  # '  hello   ' (centered)
+        print(f"{'hello':.2s}")   # 'he' (truncated to 2 chars)
+        ```
+        Output:
+        ```
+        hello     
+             hello
+          hello   
+        he
         ```
 
 
