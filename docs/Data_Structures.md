@@ -550,7 +550,7 @@ In Python, you can create two-dimensional (2D) collections using various data st
 
         ```py
         groceries = [["apple", "orange", "banana", "coconut"],
-                     ["celery", "carrots", "potatoes",]    
+                     ["celery", "carrots", "potatoes"],    
                      ["chicken", "fish", "turkey"]]
         ```
 
