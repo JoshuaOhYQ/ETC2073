@@ -813,7 +813,7 @@ Dictionaries are one of Python's most powerful and commonly used data structures
     ```py
     capitals = {"USA": "Washington",
                 "India": "New Delhi",
-                "China": : "Beijing",
+                "China": "Beijing",
                 "Russia": "Moscow"}
 
     print(dir(capitals))
@@ -824,7 +824,7 @@ Dictionaries are one of Python's most powerful and commonly used data structures
     ```py
     capitals = {"USA": "Washington",
                 "India": "New Delhi",
-                "China": : "Beijing",
+                "China": "Beijing",
                 "Russia": "Moscow"}
 
     print(help(capitals))
