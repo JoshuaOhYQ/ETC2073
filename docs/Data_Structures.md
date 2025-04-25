@@ -613,7 +613,7 @@ In Python, you can create two-dimensional (2D) collections using various data st
 
 
 ## Dictionaries
-Dictionaries are one of Python's most powerful and commonly used data structures. They store data as key-value pairs, providing fast lookups and flexible data organization. They are mutable, unordered and does not allow duplicates. The keys of the dictionaries must be hashable (strings, numbers, tuples, but not lists). There is a specific way of defining dictionaries in Python: 
+Dictionaries are one of Python's most powerful and commonly used data structures. They store data as key-value pairs, providing fast lookups and flexible data organization. They are mutable, unordered and do not allow duplicates. The keys of the dictionaries must be hashable (strings, numbers, tuples, but not lists). There is a specific way of defining dictionaries in Python: 
 
 !!! info "Common Use Cases"
 
