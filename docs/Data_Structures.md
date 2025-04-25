@@ -660,7 +660,7 @@ Dictionaries are one of Python's most powerful and commonly used data structures
         # Using get() method (safer, returns None if key doesn't exist)
         print(person.get("age"))  # Output: 30
         print(person.get("country"))  # Output: None
-        print(person.get("country", "USA"))  # Default value if key doesn't exist
+        print(person.get("country", "USA"))  # Default value if key doesn't exist which in this case is USA
         ```
 
     
@@ -715,18 +715,6 @@ Dictionaries are one of Python's most powerful and commonly used data structures
         num_items = len(person)
         ```
 
-    === "Dictionary Comprehension"
-
-        ```py
-        # Create dictionary from list
-        numbers = [1, 2, 3]
-        squared = {x: x**2 for x in numbers}
-        # Result: {1: 1, 2: 4, 3: 9}
-
-        # Conditional comprehension
-        even_squares = {x: x**2 for x in numbers if x % 2 == 0}
-        # Result: {2: 4}
-        ```
 
     === "Default Dictionaries"
 
