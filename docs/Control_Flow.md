@@ -534,7 +534,7 @@ A function in Python is a reusable block of code that performs a specific task. 
 !!! example
 
     - Use the ```def``` keyword to define a function.
-    - place () after the function name to invoke it. 
+    - place ```()``` after the function name to invoke it. 
 
     === "Basic function"
 
