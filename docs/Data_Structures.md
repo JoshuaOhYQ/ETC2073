@@ -485,7 +485,126 @@ Python offers several built-in collection (1) types, each with different charact
     my_tuple = tuple(my_list)
     my_set = set(my_list)
     ```
+
+
+## 2D Collections
+In Python, you can create two-dimensional (2D) collections using various data structures. Here are the common ways to implement 2D collections:
+
+!!! info 
+
+    2D collections are fundamental for many applications like game boards, image processing, spreadsheets, and more. You can have different forms of 2D collection with **lists, tuples and sets**, for example lists made of lists, lists made of tuples, etc. Choose the implementation that best fits your specific use case.
+
+
+!!! example
+
+    === "1"
+
+        ```py 
+        fruits = ["apple", "orange", "banana", "coconut"]
+        vegetables = ["celery", "carrots", "potatoes"]
+        meats = ["chicken", "fish", "turkey"]
+
+        groceries = [fruits, vegetables, meats]
+
+        # print the whole 2D collection
+        print(groceries)
+
+        print()
+
+        # print an entire row
+        print(groceries[0])
+
+        print()
+
+        # print elements of the 2D collection
+        print(groceries[0][0])
+
+        print()
+
+        # Single loop printing (iterating the rows)
+        for collection in groceries:
+            print(collection)
+
+        print()
+
+        # Nested loop printing (iterating the elements)
+        for collection in groceries:
+            for food in collection:
+                print(food, end=" ")
+            print()
+        ```
+        Output:
+        ["apple", "orange", "banana", "coconut"], ["celery", "carrots", "potatoes"], ["chicken", "fish", "turkey"]
+
+        ["apple", "orange", "banana", "coconut"]
+
+        apple
+
+        apple orange banana coconut
+        celery carrots potatoes
+        chicken fish coconut
+        ```
+
+        Another way of declaring it:
+
+        ```py
+        groceries = [["apple", "orange", "banana", "coconut"],
+                     ["celery", "carrots", "potatoes",]    
+                     ["chicken", "fish", "turkey"]]
+        ```
+
+
+    === "2"
+
+        ```py 
+        num_pad =((1, 2, 3),
+                  (4, 5, 6),
+                  (7, 8, 9),
+                  ("*", 0, "#"))
         
+        for row in num_pad:
+            for num in row:
+                print(num, end" ")
+            print()
+        ```
+        Output:
+        ```
+        1 2 3
+        4 5 6
+        7 8 9
+        * 0 #
+        ```
+
+
+    === "3"
+
+        ```py 
+        # Creating a 2D list (matrix)
+        matrix = [
+            [1, 2, 3],
+            [4, 5, 6],
+            [7, 8, 9]
+        ]
+
+        # Accessing elements
+        print(matrix[0][1])  # Output: 2 (first row, second column)
+
+        # Modifying elements
+        matrix[1][2] = 10  # Changes 6 to 10
+
+        # Iterating through the matrix
+        for row in matrix:
+            for element in row:
+                print(element, end=' ')
+            print()
+        ```
+        Output:
+        ```
+        2
+        1 2 3
+        4 5 10
+        7 8 9
+        ``` 
 
 
    
