@@ -531,10 +531,16 @@ Nested loop is a loop inside another loop. It is used when you need to perform r
 ## Function 
 A function in Python is a reusable block of code that performs a specific task. Functions help in organizing code, improving readability, and avoiding repetition.
 
-!!! example
+!!! info 
 
     - Use the ```def``` keyword to define a function.
     - place ```()``` after the function name to invoke it. 
+    - Parameters specify what input a function expects to receive and they allow functions to work with different input values each time they're called. There are different types of parameters which we will go through in the next section!
+    - The ```return``` statement is used in functions to specify the value that the function should output or "give back" when it's called and end a function.
+    - Not all functions need a return statement (functions without one return ```None``` by default)
+
+
+!!! example
 
     === "Basic function"
 
@@ -625,6 +631,56 @@ A function in Python is a reusable block of code that performs a specific task. 
 
         ```
 
+
+    === "Function with return statement"
+
+        **Working with float/integers:**
+
+        ``` py
+        def add(x, y):
+            z = x + y
+            return z
+
+        def subtract(x, y):
+            z = x - y
+            return z
+
+        def multiply(x, y):
+            z = x * y
+            return z
+
+        def divide(x, y):
+            z = x / y
+            return z
+
+        print(add(1, 2))
+        print(subtract(1, 2))
+        print(multiply(1, 2))
+        print(divide(1, 2))
+        ```
+        Output: 
+        ```
+        3
+        -1
+        2
+        0.5
+        ```
+
+        **Working with strings:**
+
+        ``` py
+        def create_name(first, last):
+            first = first.capitalize()
+            last = last.capitalize()
+            return first + " " + last
+        
+        full_name = create_name("john", "cena")
+        print(full_name)
+        ```
+        Output: 
+        ```
+        John Cena
+        ```
 
 
 
