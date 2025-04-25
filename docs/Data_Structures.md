@@ -655,7 +655,6 @@ Dictionaries are one of Python's most powerful and commonly used data structures
 
         ```py
         # Using square bracket notation
-        # Using square bracket notation
         print(person["name"])  # Output: Alice
 
         # Using get() method (safer, returns None if key doesn't exist)
