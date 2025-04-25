@@ -626,7 +626,123 @@ Dictionaries are one of Python's most powerful and commonly used data structures
 
 !!! example
 
-    === "1"
+    === "Creating Dictionaries"
+
+        ```py
+        # Empty dictionary
+        empty_dict = {}
+
+        # Dictionary with initial values
+        person = {
+            "name": "Alice",
+            "age": 30,
+            "city": "New York"
+        }
+
+        # Using dict() constructor
+        person = dict(name="Alice", age=30, city="New York")
+
+        # Dictionary with mixed key types
+        mixed_dict = {
+            "name": "Bob",
+            42: "The Answer",
+            (1, 2): "Tuple as key"
+        }
+        ```
+    
+    
+    === "Accessing Values"
+
+        ```py
+        # Using square bracket notation
+        # Using square bracket notation
+        print(person["name"])  # Output: Alice
+
+        # Using get() method (safer, returns None if key doesn't exist)
+        print(person.get("age"))  # Output: 30
+        print(person.get("country"))  # Output: None
+        print(person.get("country", "USA"))  # Default value if key doesn't exist
+        ```
+
+    
+    === "Adding/Updating Items"
+
+        ```py
+        # Adding new key-value pair
+        person["occupation"] = "Engineer"
+
+        # Updating existing value
+        person["age"] = 31
+
+        # Update multiple items at once
+        person.update({"age": 32, "country": "USA"})
+        ```
+
+
+    === "Removing Items"
+
+        ```py
+        # Using del
+        del person["city"]
+
+        # Using pop() - removes and returns value
+        age = person.pop("age")
+
+        # Using popitem() - removes and returns last inserted item (Python 3.7+)
+        last_item = person.popitem()
+
+        # Clear all items
+        person.clear()
+        ```
+
+    
+    === "Other Dictionary Methods"
+
+        ```py
+        # Get all keys
+        keys = person.keys()  # Returns a view object
+
+        # Get all values
+        values = person.values()  # Returns a view object
+
+        # Get all key-value pairs
+        items = person.items()  # Returns a view object
+
+        # Check if key exists
+        if "name" in person:
+            print("Name exists")
+
+        # Dictionary length
+        num_items = len(person)
+        ```
+
+    === "Dictionary Comprehension"
+
+        ```py
+        # Create dictionary from list
+        numbers = [1, 2, 3]
+        squared = {x: x**2 for x in numbers}
+        # Result: {1: 1, 2: 4, 3: 9}
+
+        # Conditional comprehension
+        even_squares = {x: x**2 for x in numbers if x % 2 == 0}
+        # Result: {2: 4}
+        ```
+
+    === "Default Dictionaries"
+
+        ```py
+        from collections import defaultdict
+
+        # Automatically initializes missing keys
+        word_counts = defaultdict(int)
+        for word in ["apple", "banana", "apple"]:
+            word_counts[word] += 1
+        # Result: defaultdict(<class 'int'>, {'apple': 2, 'banana': 1})
+        ```
+
+        
+    === "Other Examples (in full)"
 
         ```py 
         # Dictionary Basics
@@ -702,38 +818,6 @@ Dictionaries are one of Python's most powerful and commonly used data structures
         Germany: Berlin
         ```
         
-
-
-    === "Float formatting"
-
-        ```py 
-        print(f"{3.14159:.2f}")   # '3.14' (2 decimal places)
-        print(f"{3.14159:10.2f}") # '      3.14' (width 10, 2 decimals)
-        print(f"{3.14159:e}")     # '3.141590e+00' (scientific notation)
-        ```
-        Output:
-        ```
-        3.14
-              3.14
-        3.141590e+00
-        ```
-
-
-    === "String formatting"
-
-        ```py 
-        print(f"{'hello':10s}")   # 'hello     ' (left-aligned, width 10)
-        print(f"{'hello':>10s}")  # '     hello' (right-aligned)
-        print(f"{'hello':^10s}")  # '  hello   ' (centered)
-        print(f"{'hello':.2s}")   # 'he' (truncated to 2 chars)
-        ```
-        Output:
-        ```
-        hello     
-             hello
-          hello   
-        he
-        ```
 
 !!! Tip 
 
