@@ -607,6 +607,92 @@ In Python, you can create two-dimensional (2D) collections using various data st
         ``` 
 
 
+## Dictionaries
+Format specifiers in Python are used to control how values are formatted based on waht flags are inserted. They allow you to specify things like alignment, padding, precision, and type representation. Python provides several ways to use format specifiers:
+
+!!! info "Common Format Specifier"
+
+    The general syntax is:
+    
+    ```[fill][align][sign][#][0][width][grouping][.precision][type]```
+
+    where,
+
+    - Fill: Character to pad with (default is space)
+    - Align: ```<``` (left), ```>``` (right), ```^``` (center), ```=```(pad after sign)
+    - Sign: ```+``` (show sign for both + and -), ```-``` (only for -), space (leading space for +)
+    - Width: Minimum field width
+    - Precision: For floating point, number of digits after decimal
+    - Type:
+        * d, i: integer
+        * f, F: float
+        * e, E: scientific notation
+        * g, G: general format (auto switches between f and e)
+        * %: percentage
+        * x, X: hexadecimal
+        * o: octal
+        * b: binary
+        * c: character (unicode code point)
+
+
+!!! example
+
+    Format specifiers provide powerful control over how values are displayed in Python strings.
+
+    === "Number formatting"
+
+        ```py 
+        print(f"{1234:10d}")      # '      1234' (right-aligned, width 10)
+        print(f"{1234:<10d}")     # '1234      ' (left-aligned)
+        print(f"{1234:^10d}")     # '   1234   ' (centered)
+        print(f"{1234:010d}")     # '0000001234' (zero-padded)
+        print(f"{1234:,d}")       # '1,234' (with thousands separator)
+        print(f"Binary: {10:b}")          # Output: Binary: 1010
+        ```
+        Output:
+        ```
+              1234
+        1234      
+           1234   
+        0000001234
+        1,234
+        1010
+        ```
+        
+
+
+    === "Float formatting"
+
+        ```py 
+        print(f"{3.14159:.2f}")   # '3.14' (2 decimal places)
+        print(f"{3.14159:10.2f}") # '      3.14' (width 10, 2 decimals)
+        print(f"{3.14159:e}")     # '3.141590e+00' (scientific notation)
+        ```
+        Output:
+        ```
+        3.14
+              3.14
+        3.141590e+00
+        ```
+
+
+    === "String formatting"
+
+        ```py 
+        print(f"{'hello':10s}")   # 'hello     ' (left-aligned, width 10)
+        print(f"{'hello':>10s}")  # '     hello' (right-aligned)
+        print(f"{'hello':^10s}")  # '  hello   ' (centered)
+        print(f"{'hello':.2s}")   # 'he' (truncated to 2 chars)
+        ```
+        Output:
+        ```
+        hello     
+             hello
+          hello   
+        he
+        ```
+
+
    
 
 
