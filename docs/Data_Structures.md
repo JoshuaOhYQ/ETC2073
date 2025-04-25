@@ -613,55 +613,93 @@ In Python, you can create two-dimensional (2D) collections using various data st
 
 
 ## Dictionaries
-Format specifiers in Python are used to control how values are formatted based on waht flags are inserted. They allow you to specify things like alignment, padding, precision, and type representation. Python provides several ways to use format specifiers:
+Dictionaries are one of Python's most powerful and commonly used data structures. They store data as key-value pairs, providing fast lookups and flexible data organization. They are mutable, unordered and does not allow duplicates. The keys of the dictionaries must be hashable (strings, numbers, tuples, but not lists). There is a specific way of defining dictionaries in Python: 
 
-!!! info "Common Format Specifier"
+!!! info "Common Use Cases"
 
-    The general syntax is:
-    
-    ```[fill][align][sign][#][0][width][grouping][.precision][type]```
-
-    where,
-
-    - Fill: Character to pad with (default is space)
-    - Align: ```<``` (left), ```>``` (right), ```^``` (center), ```=```(pad after sign)
-    - Sign: ```+``` (show sign for both + and -), ```-``` (only for -), space (leading space for +)
-    - Width: Minimum field width
-    - Precision: For floating point, number of digits after decimal
-    - Type:
-        * d, i: integer
-        * f, F: float
-        * e, E: scientific notation
-        * g, G: general format (auto switches between f and e)
-        * %: percentage
-        * x, X: hexadecimal
-        * o: octal
-        * b: binary
-        * c: character (unicode code point)
+    1. **Counting occurrences** (word frequency, etc.)
+    2. **Fast lookups** by key (much faster than lists for large datasets)
+    3. **Structured data** (like JSON objects)
+    4. **Memoization** (caching function results)
+    5. **Implementing graphs** (adjacency lists)
 
 
 !!! example
 
-    Format specifiers provide powerful control over how values are displayed in Python strings.
-
-    === "Number formatting"
+    === "1"
 
         ```py 
-        print(f"{1234:10d}")      # '      1234' (right-aligned, width 10)
-        print(f"{1234:<10d}")     # '1234      ' (left-aligned)
-        print(f"{1234:^10d}")     # '   1234   ' (centered)
-        print(f"{1234:010d}")     # '0000001234' (zero-padded)
-        print(f"{1234:,d}")       # '1,234' (with thousands separator)
-        print(f"Binary: {10:b}")          # Output: Binary: 1010
+        # Dictionary Basics
+        capitals = {"USA": "Washington",
+                    "India": "New Delhi",
+                    "China": "Beijing",  
+                    "Russia": "Moscow"}
+
+        # Accessing values
+        print(capitals.get("USA"))  # Washington
+        print(capitals.get("India"))  # New Delhi
+
+        # Adding new key-value pair
+        capitals.update({"Germany": "Berlin"})
+        print(capitals)  # Includes Germany: Berlin
+
+        # Updating existing value
+        capitals.update({"USA": "Detroit"})
+        print(capitals)  # USA now maps to Detroit
+
+        # Removing a key-value pair
+        capitals.pop("China")
+        print(capitals)  # China removed
+
+        # Working with keys
+        # Get all keys
+        keys = capitals.keys()
+        print(keys)  # dict_keys(['USA', 'India', 'Russia', 'Germany'])
+
+        # Iterate through keys
+        for key in capitals.keys():
+            print(key)
+
+        # Working with values
+        # Get all values
+        values = capitals.values()
+        print(values)  # dict_values(['Detroit', 'New Delhi', 'Moscow', 'Berlin'])
+
+        # Iterate through values
+        for value in capitals.values():
+            print(value)
+
+        # Working with items (key-value pairs)
+        # Get all items
+        items = capitals.items()
+        print(items)  # dict_items([('USA', 'Detroit'), ('India', 'New Delhi'), ...])
+
+        # Iterate through items
+        for key, value in capitals.items():
+            print(f"{key}: {value}")
         ```
         Output:
         ```
-              1234
-        1234      
-           1234   
-        0000001234
-        1,234
-        1010
+        Washington
+        New Delhi
+        {'USA': 'Washington', 'India': 'New Delhi', 'China': 'Beijing', 'Russia': 'Moscow', 'Germany': 'Berlin'}
+        {'USA': 'Detroit', 'India': 'New Delhi', 'China': 'Beijing', 'Russia': 'Moscow', 'Germany': 'Berlin'}
+        {'USA': 'Detroit', 'India': 'New Delhi', 'Russia': 'Moscow', 'Germany': 'Berlin'}
+        dict_keys(['USA', 'India', 'Russia', 'Germany'])
+        USA
+        India
+        Russia
+        Germany
+        dict_values(['Detroit', 'New Delhi', 'Moscow', 'Berlin'])
+        Detroit
+        New Delhi
+        Moscow
+        Berlin
+        dict_items([('USA', 'Detroit'), ('India', 'New Delhi'), ('Russia', 'Moscow'), ('Germany', 'Berlin')])
+        USA: Detroit
+        India: New Delhi
+        Russia: Moscow
+        Germany: Berlin
         ```
         
 
@@ -697,6 +735,29 @@ Format specifiers in Python are used to control how values are formatted based o
         he
         ```
 
+!!! Tip 
+
+    **To display lists of all the attributes and methods for dictionaries:**
+
+    ```py
+    capitals = {"USA": "Washington",
+                "India": "New Delhi",
+                "China": : "Beijing",
+                "Russia": "Moscow"}
+
+    print(dir(capitals))
+    ```
+
+    **To display the in-depth description of attributes and methods for dictionaries:**
+
+    ```py
+    capitals = {"USA": "Washington",
+                "India": "New Delhi",
+                "China": : "Beijing",
+                "Russia": "Moscow"}
+
+    print(help(capitals))
+    ```
 
    
 
