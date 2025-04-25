@@ -528,6 +528,88 @@ Nested loop is a loop inside another loop. It is used when you need to perform r
 
     Avoid using too many nested loops (e.g., 3+ levels) as it can slow down your program and increase complexity!
 
+## Function 
+A function in Python is a reusable block of code that performs a specific task. Functions help in organizing code, improving readability, and avoiding repetition.
+
+!!! example
+
+    - Use the ```def``` keyword to define a function.
+    - place () after the function name to invoke it. 
+
+    === "Basic function"
+
+        ``` py
+        def happy_birthday():
+            print("Happy birthday to you!")
+            print("You are old!")
+            print("Happy birthday to you!")
+            print()
+
+        happy_birthday()
+        happy_birthday()
+        happy_birthday()
+
+
+        ```
+        Output:
+        ```
+        123456789
+        123456789
+        123456789
+        ```
+
+
+    === "Function with parameter"
+
+        ``` py
+        def happy_birthday(name):
+            print(f"Happy birthday to {name}!")
+            print("You are old!")
+            print("Happy birthday to you!")
+            print()
+
+        happy_birthday("John")
+        happy_birthday("Josh")
+        happy_birthday("Steve")
+        ```
+        Output: 
+        ```
+        Enter the # of rows: 4
+        Enter the # of columns: 10
+        Enter a symbol to use: $
+        $$$$$$$$$$
+        $$$$$$$$$$
+        $$$$$$$$$$
+        $$$$$$$$$$
+        ```
+
+
+    === "Function with multiple parameters"
+
+        ``` py
+        def happy_birthday(name, age):
+            print(f"Happy birthday to {name}}!")
+            print(f"You are {age} years old!")
+            print("Happy birthday to you!")
+            print()
+
+        happy_birthday("John", 20)
+        happy_birthday("Josh", 30)
+        happy_birthday("Steve", 40)
+        ```
+        Output: 
+        ```
+        1 1
+        1 2
+        2 1
+        2 2
+        3 1
+        3 2
+        ```
+
+!!! Warning
+
+    Avoid using too many nested loops (e.g., 3+ levels) as it can slow down your program and increase complexity!
 
 
 
