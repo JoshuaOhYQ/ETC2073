@@ -569,7 +569,7 @@ In Python, you can create two-dimensional (2D) collections using various data st
         
         for row in num_pad:
             for num in row:
-                print(num, end" ")
+                print(num, end=" ")
             print()
         ```
         Output:
