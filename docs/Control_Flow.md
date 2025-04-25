@@ -553,9 +553,17 @@ A function in Python is a reusable block of code that performs a specific task. 
         ```
         Output:
         ```
-        123456789
-        123456789
-        123456789
+        Happy birthday to you!
+        You are old!
+        Happy birthday to you!
+
+        Happy birthday to you!
+        You are old!
+        Happy birthday to you!
+
+        Happy birthday to you!
+        You are old!
+        Happy birthday to you!
         ```
 
 
@@ -574,13 +582,17 @@ A function in Python is a reusable block of code that performs a specific task. 
         ```
         Output: 
         ```
-        Enter the # of rows: 4
-        Enter the # of columns: 10
-        Enter a symbol to use: $
-        $$$$$$$$$$
-        $$$$$$$$$$
-        $$$$$$$$$$
-        $$$$$$$$$$
+        Happy birthday to John!
+        You are old!
+        Happy birthday to you!
+
+        Happy birthday to Josh!
+        You are old!
+        Happy birthday to you!
+
+        Happy birthday to Steve!
+        You are old!
+        Happy birthday to you!
         ```
 
 
@@ -588,7 +600,7 @@ A function in Python is a reusable block of code that performs a specific task. 
 
         ``` py
         def happy_birthday(name, age):
-            print(f"Happy birthday to {name}}!")
+            print(f"Happy birthday to {name}!")
             print(f"You are {age} years old!")
             print("Happy birthday to you!")
             print()
@@ -599,17 +611,21 @@ A function in Python is a reusable block of code that performs a specific task. 
         ```
         Output: 
         ```
-        1 1
-        1 2
-        2 1
-        2 2
-        3 1
-        3 2
+        Happy birthday to John!
+        You are 20 years old!
+        Happy birthday to you!
+
+        Happy birthday to Josh!
+        You are 30 years old!
+        Happy birthday to you!
+
+        Happy birthday to Steve!
+        You are 40 years old!
+        Happy birthday to you!
+
         ```
 
-!!! Warning
 
-    Avoid using too many nested loops (e.g., 3+ levels) as it can slow down your program and increase complexity!
 
 
 
