@@ -534,6 +534,7 @@ In Python, you can create two-dimensional (2D) collections using various data st
             print()
         ```
         Output:
+        ```
         ["apple", "orange", "banana", "coconut"], ["celery", "carrots", "potatoes"], ["chicken", "fish", "turkey"]
 
         ["apple", "orange", "banana", "coconut"]
