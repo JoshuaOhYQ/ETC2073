@@ -13,6 +13,13 @@ Additionally, I’ve included several hands-on projects developed during my free
 
 Feel free to explore, learn, and contribute!
 
+!!! Bug 
+
+    Since I wrote everything here myself with some help from AI, there may be some mistakes made. If you seen any mistakes, please email them to: 
+    ```
+    yuqiao.oh@gmail.com
+    ```
+
 ???+ success "Why Python for AI?"
 
     **Simplicity & Readability**  
