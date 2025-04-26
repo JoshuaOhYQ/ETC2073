@@ -1182,7 +1182,7 @@ An iterable is any Python **object or collection** capable of returning its elem
         C = 3
         ```
 
-!!! Quote "Did you know!?!"
+!!! Quote "Did you know !?!"
 
     You can use the ```collections.abc.Iterable``` abstract base class to check if an object is iterable: 
 
