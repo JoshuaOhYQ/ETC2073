@@ -933,20 +933,20 @@ Keyword arguments (also called named arguments) allow you to pass arguments to a
 
     === "Common Use Cases"
 
-        1. Functions with many parameters:
+        - Functions with many parameters:
 
            ```py 
            def draw_rectangle(x, y, width, height, *, fill_color="black", border_color="gray", border_width=1):
                  # implementation
            ```
 
-        2. APIs where parameter names are meaningful:
+        - APIs where parameter names are meaningful:
            
            ```py 
            requests.get(url, params=None, headers=None, timeout=None)
            ```
 
-        3. Functions where most parameters are optional:
+        - Functions where most parameters are optional:
 
            ```py
            def format_text(text, *, bold=False, italic=False, color="black"):
