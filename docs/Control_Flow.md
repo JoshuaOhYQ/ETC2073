@@ -962,7 +962,29 @@ Python provides two ways to handle an arbitrary (variable) number of arguments i
     === "Arbitrary Positional Arguments (```*args```)"
 
         - Allow you to pass multiple non-key arguments
-        - 
+        - Collects extra positional arguments into a tuple
+
+        ```py
+        def sum_numbers(*args):
+            total = 0
+            for num in args:
+                total += num
+            return total
+
+        print(sum_numbers(1, 2, 3))        # Output: 6
+        print(sum_numbers(10, 20, 30, 40)) # Output: 100
+        ```
+        Output:
+        ```
+        6
+        100
+        ```
+
+        **Features:**
+
+        - The ```*args``` parameter must come after regular parameters
+        - You can name it anything (the ```*``` is what matters), but ```args``` is convention
+        - Useful when you don't know how many arguments might be passed
 
 
 
@@ -970,7 +992,56 @@ Python provides two ways to handle an arbitrary (variable) number of arguments i
     === "Arbitrary Keyword Arguments (```**kwargs```)"
 
         - Allow you to pass multiple keyword-arguments
+        - Collects extra keyword arguments into a dictionary
 
+        ```py
+        def print_user_info(**kwargs):
+            for key, value in kwargs.items():
+                print(f"{key}: {value}")
+
+        print_user_info(name="Alice", age=25, occupation="Engineer")
+        # Output:
+        # name: Alice
+        # age: 25
+        # occupation: Engineer
+        ```
+        Output:
+        ```
+        name: Alice
+        age: 25
+        occupation: Engineer
+        ```
+
+        **Features:**
+
+        - The ```**kwargs``` parameter must come after all other parameters
+        - You can name it anything (the ```**``` is what matters), but ```kwargs``` is convention
+        - Useful for functions that need to handle named parameters flexibly
+
+    
+    === "Combining Both"
+
+        ```py 
+        def process_data(name, age, *scores, **properties):
+            print(f"Name: {name}")
+            print(f"Age: {age}")
+            print(f"Scores: {scores}")
+            print(f"Properties: {properties}")
+
+        process_data("Bob", 30, 85, 92, 78, department="IT", role="Developer")
+        # Output:
+        # Name: Bob
+        # Age: 30
+        # Scores: (85, 92, 78)
+        # Properties: {'department': 'IT', 'role': 'Developer'}
+        ```
+        Output:
+        ```
+        Name: Bob
+        Age: 30
+        Scores: (85, 92, 78)
+        Properties: {'department': 'IT', 'role': 'Developer'}
+        ```
 
 
 
