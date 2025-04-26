@@ -1021,6 +1021,8 @@ Python provides two ways to handle an arbitrary (variable) number of arguments i
     
     === "Combining Both"
 
+        **Example 1:**
+
         ```py 
         def process_data(name, age, *scores, **properties):
             print(f"Name: {name}")
@@ -1041,6 +1043,40 @@ Python provides two ways to handle an arbitrary (variable) number of arguments i
         Age: 30
         Scores: (85, 92, 78)
         Properties: {'department': 'IT', 'role': 'Developer'}
+        ```
+
+        **Example 2:**
+
+        ```py 
+        def shipping_label(*args, **kwargs):
+            for arg in args:
+                print(arg,end=" ")
+            print()
+
+            if "apt" in kwargs:
+                print(f"{kwargs.get('street')} {kwargs.get('apt')}")
+
+            elif "PObox" in kwargs:
+                print(f"{kwargs.get('street')}")
+                print(f"{kwargs.get('PObox')}")
+
+            else:
+                print(f"{kwargs.get('street')}")
+
+            print(f"{kwargs.get('city')} {kwargs.get('state')}, {kwargs.get('zip')}")
+
+        shipping_label("Dr.", "Spongebob", "Squarepants",
+                       street="123 Fake St.",
+                       apt="#100",
+                       city="Detroit",
+                       state="MI",
+                       zip="54321")
+        ```
+        Output:
+        ```
+        Dr Spongebob Squarepants
+        123 Fake St. #100
+        Detroit MI, 54321
         ```
 
 
