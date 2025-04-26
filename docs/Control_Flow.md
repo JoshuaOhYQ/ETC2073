@@ -1031,11 +1031,6 @@ Python provides two ways to handle an arbitrary (variable) number of arguments i
             print(f"Properties: {properties}")
 
         process_data("Bob", 30, 85, 92, 78, department="IT", role="Developer")
-        # Output:
-        # Name: Bob
-        # Age: 30
-        # Scores: (85, 92, 78)
-        # Properties: {'department': 'IT', 'role': 'Developer'}
         ```
         Output:
         ```
