@@ -760,7 +760,7 @@ Default arguments in Python allow you to specify default values for function par
     === "1"
 
         ```py 
-        def net_price(list_place, discount=0, tax=0.05):
+        def net_price(list_price, discount=0, tax=0.05):
             return list_price * (1 - discount) * (1 + tax)
 
         print(net_price(500))         # using default arg.
@@ -769,8 +769,9 @@ Default arguments in Python allow you to specify default values for function par
         ```
         Output:
         ```
-
-
+        525.0
+        472.5
+        450.0
         ```
 
 
@@ -789,8 +790,18 @@ Default arguments in Python allow you to specify default values for function par
         ```
         Output:
         ```
-
-
+        0
+        1
+        2
+        3
+        4
+        5
+        6
+        7
+        8
+        9
+        10
+        Done!
         ```
 
     
@@ -809,8 +820,23 @@ Default arguments in Python allow you to specify default values for function par
         ```
         Output:
         ```
-
-
+        15
+        16
+        17
+        18
+        19
+        20
+        21
+        22
+        23
+        24
+        25
+        26
+        27
+        28
+        29
+        30
+        Done!
         ```
 
 
