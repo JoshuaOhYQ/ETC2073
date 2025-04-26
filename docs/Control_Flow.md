@@ -682,6 +682,162 @@ A function in Python is a reusable block of code that performs a specific task. 
         John Cena
         ```
 
+## Positional Arguments 
+Positional arguments are the most basic type of arguments in Python functions. They are called "positional" because their meaning is determined by their position in the function call. Positional arguments must be passed in the exact order that the function parameters are defined.
+
+!!! tip "Key Characteristics
+
+    1. **Order matters:* The first argument corresponds to the first parameter, second to second, etc.
+    2. **Required by default:** You must provide values for all positional arguments unless they have default values.
+
+!!! example 
+
+    ```py 
+    def greet(name, greeting):
+    print(f"{greeting}, {name}!")
+
+    greet("Alice", "Hello")  # Correct order
+    # Output: Hello, Alice!
+
+    greet("Hello", "Alice")  # Wrong order - logical error
+    # Output: Alice, Hello!
+    ```
+    Output:
+    ```
+    Hello, Alice!
+    Alice, Hello!
+    ```
+    
+
+## Default Arguments 
+Default arguments in Python allow you to specify default values for function parameters. If the caller doesn't provide a value for that parameter, the default value is used instead.
+
+!!! Question "Why Default Arguments?!?"
+
+    Default arguments make your functions more flexible, reduces number of arguments while maintaining backward compatibility with existing calls!
+
+!!! info "Key Points About Default Arguments"
+
+    1. **Order matters:** Parameters with default arguments must come after non-default parameters.
+
+    ```py
+    # Correct
+    def func(a, b=1):
+        pass
+
+    # Wrong
+    def func(a=1, b):
+        pass
+    ```
+
+    2. **Mutable defaults are dangerous:** Default arguments are evaluated only once when the function is defined, not each time it's called. This can cause issues with mutable defaults.
+    
+    ```py
+    def append_to(element, lst=[]):
+        lst.append(element)
+        return lst
+
+    print(append_to(1))  # [1]
+    print(append_to(2))  # [1, 2] - probably not what you wanted!
+    ```
+
+    Better approach:
+    ```py
+    def append_to(element, lst=None):
+        if lst is None:
+            lst = []
+        lst.append(element)
+        return lst
+    ```
+
+    3. **Default arguments can be any expression**
+
+    4. **Overriding defaults:** You can override defaults by passing a different value.
+
+
+!!! example
+
+    === "1"
+
+        ```py 
+        def net_price(list_place, discount=0, tax=0.05):
+            return list_price * (1 - discount) * (1 + tax)
+
+        print(net_price(500))         # using default arg.
+        print(net_price(500, 0.1))    # overriding defaults
+        print(net_price(500, 0.1, 0)) # overriding defaults
+        ```
+        Output:
+        ```
+
+
+        ```
+
+
+    === "2.1" 
+
+        ```py
+        import time 
+
+        def count(end, start=0):
+            for x  in range(start, end+1):
+                print(x)
+                time.sleep(1) 
+            print("Done!")           
+
+        count(10)                       # using default arg.
+        ```
+        Output:
+        ```
+
+
+        ```
+
+    
+    === "2.2"
+
+        ```py
+        import time 
+
+        def count(end, start=0):
+            for x  in range(start, end+1):
+                print(x)
+                time.sleep(1) 
+            print("Done!")
+
+        count(30, 15)            # overriding defaults
+        ```
+        Output:
+        ```
+
+
+        ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
 
 
 
