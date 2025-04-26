@@ -685,7 +685,7 @@ A function in Python is a reusable block of code that performs a specific task. 
 ## Positional Arguments 
 Positional arguments are the most basic type of arguments in Python functions. They are called "positional" because their meaning is determined by their position in the function call. Positional arguments must be passed in the exact order that the function parameters are defined.
 
-!!! tip "Key Characteristics
+!!! tip "Key Characteristics"
 
     1. **Order matters:** The first argument corresponds to the first parameter, second to second, etc.
     2. **Required by default:** You must provide values for all positional arguments unless they have default values.
