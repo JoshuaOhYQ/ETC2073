@@ -955,8 +955,20 @@ Keyword arguments (also called named arguments) allow you to pass arguments to a
 
 
 ## Arbitary Arguments (Args-Kwargs)
-   Python provides two ways to handle an arbitrary (variable) number of arguments in functions:
-    
+Python provides two ways to handle an arbitrary (variable) number of arguments in functions:
+
+!!! example 
+
+    === "Arbitrary Positional Arguments (*args)"
+
+        - Allow you to pass multiple non-key arguments
+        - 
+
+
+
+
+    === "Arbitrary Keyword Arguments (**kwargs)"
+
 
 
 
