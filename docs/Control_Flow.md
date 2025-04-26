@@ -944,6 +944,7 @@ Keyword arguments (also called named arguments) allow you to pass arguments to a
            
            ```py 
            requests.get(url, params=None, headers=None, timeout=None)
+           
            ```
 
         - Functions where most parameters are optional:
