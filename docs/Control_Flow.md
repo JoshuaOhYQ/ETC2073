@@ -720,35 +720,35 @@ Default arguments in Python allow you to specify default values for function par
 
     1. **Order matters:** Parameters with default arguments must come after non-default parameters.
 
-    ```py
-    # Correct
-    def func(a, b=1):
-        pass
+        ```py
+        # Correct
+        def func(a, b=1):
+            pass
 
-    # Wrong
-    def func(a=1, b):
-        pass
-    ```
+        # Wrong
+        def func(a=1, b):
+            pass
+        ```
 
     2. **Mutable defaults are dangerous:** Default arguments are evaluated only once when the function is defined, not each time it's called. This can cause issues with mutable defaults.
     
-    ```py
-    def append_to(element, lst=[]):
-        lst.append(element)
-        return lst
+        ```py
+        def append_to(element, lst=[]):
+            lst.append(element)
+            return lst
 
-    print(append_to(1))  # [1]
-    print(append_to(2))  # [1, 2] - probably not what you wanted!
-    ```
+        print(append_to(1))  # [1]
+        print(append_to(2))  # [1, 2] - probably not what you wanted!
+        ```
 
-    Better approach:
-    ```py
-    def append_to(element, lst=None):
-        if lst is None:
-            lst = []
-        lst.append(element)
-        return lst
-    ```
+        Better approach:
+        ```py
+        def append_to(element, lst=None):
+            if lst is None:
+                lst = []
+            lst.append(element)
+            return lst
+        ```
 
     3. **Default arguments can be any expression**
 
