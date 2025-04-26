@@ -840,6 +840,127 @@ Default arguments in Python allow you to specify default values for function par
         ```
 
 
+## Keyword Arguments
+Keyword arguments (also called named arguments) allow you to pass arguments to a function by explicitly specifying the parameter names and preceded by an identifier. Unlike positional arguments, the order doesn't matter when using keyword arguments.
+
+!!! Sucess "Key Features"
+
+    1. **Clarity:** Makes code more readable by showing what each argument represents
+    2. **Flexibility:** Allows you to specify arguments in any order
+    3. **Default values:** Often used with parameters that have default values
+    4. **Combination with positional args:** Can be mixed with positional arguments (positional args must come first) 
+       
+       ```py
+       def register_user(name, email, phone=None, country="US"):
+            print(f"Registering {name} ({email}), Phone: {phone}, Country: {country}")
+
+        # Valid calls
+        register_user("Alice", "alice@example.com")  # positional
+        register_user("Bob", "bob@example.com", country="UK")  # mixed
+        register_user(name="Charlie", email="charlie@example.com")  # keyword
+        ```
+
+!!! example
+
+    === "Self-Written"
+
+        **Example 1:**
+
+        ```py
+        def hello(greeting, title, first, last):
+            print(f"{greeting} {title}{first} {last}")
+        
+        hello(greeting="Hello", last="Squarepants", first="Spongebob", title="Mr.")
+        ```
+        Output:
+        ```
+        Hello Mr.Spongebob Squarepants
+        ```
+
+        **Example 2:**
+
+        ```py
+        def describe_pet(animal_type, pet_name):
+            print(f"I have a {animal_type} named {pet_name}.")
+
+        # Using keyword arguments (order doesn't matter)
+        describe_pet(pet_name="Whiskers", animal_type="cat")
+        describe_pet(animal_type="dog", pet_name="Rover")
+        ```
+        Output:
+        ```
+        I have a cat named Whiskers.
+        I have a dog named Rover.
+        ```
+
+
+    === "Built-in"
+
+        **End Keyword argument:**
+
+        ```py
+        for x in range(1, 11):
+            print(x, end=" ")        # end is a built in keyword arg. in print function
+        ```
+        Output:
+        ```
+        1 2 3 4 5 6 7 8 9 10 
+        ```
+
+        **Seperate Keyword argument:**
+
+        ```py
+            print("1", "2", "3", "4", "5", sep="-")        # sep is a built in keyword arg. in print function
+        ```
+        Output:
+        ```
+        1-2-3-4-5
+        ```
+
+!!! abstract "Other Details"
+
+    === "Forced keyword arguments"
+
+        **You can force arguments to be keyword-only by using ``*`` in the parameter list:**
+
+        ```py
+        def create_profile(name, *, age, occupation):
+            print(f"{name}, {age}, {occupation}")
+
+        create_profile("Alice", age=30, occupation="Engineer")  # Valid
+        create_profile("Bob", 25, "Teacher")  # Error: age and occupation must be keyword args
+        ```
+
+    === "Common Use Cases"
+
+        1. Functions with many parameters:
+
+           ```py 
+           def draw_rectangle(x, y, width, height, *, fill_color="black", border_color="gray", border_width=1):
+                 # implementation
+           ```
+
+        2. APIs where parameter names are meaningful:
+           
+           ```py 
+           requests.get(url, params=None, headers=None, timeout=None)
+           ```
+
+        3. Functions where most parameters are optional:
+
+           ```py
+           def format_text(text, *, bold=False, italic=False, color="black"):
+                # implementation
+           ```
+
+
+
+
+
+
+
+
+
 
 
 
