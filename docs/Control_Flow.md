@@ -687,7 +687,7 @@ Positional arguments are the most basic type of arguments in Python functions. T
 
 !!! tip "Key Characteristics
 
-    1. **Order matters:* The first argument corresponds to the first parameter, second to second, etc.
+    1. **Order matters:** The first argument corresponds to the first parameter, second to second, etc.
     2. **Required by default:** You must provide values for all positional arguments unless they have default values.
 
 !!! example 
