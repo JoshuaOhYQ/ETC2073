@@ -1164,7 +1164,7 @@ An iterable is any Python **object or collection** capable of returning its elem
         ```
         Output:
         ```
-        J o h n  C e n a
+        J o h n   C e n a 
         ```
 
     === "Dictionary"
