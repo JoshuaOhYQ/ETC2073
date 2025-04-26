@@ -854,11 +854,11 @@ Keyword arguments (also called named arguments) allow you to pass arguments to a
        def register_user(name, email, phone=None, country="US"):
             print(f"Registering {name} ({email}), Phone: {phone}, Country: {country}")
 
-        # Valid calls
-        register_user("Alice", "alice@example.com")  # positional
-        register_user("Bob", "bob@example.com", country="UK")  # mixed
-        register_user(name="Charlie", email="charlie@example.com")  # keyword
-        ```
+       # Valid calls
+       register_user("Alice", "alice@example.com")  # positional
+       register_user("Bob", "bob@example.com", country="UK")  # mixed
+       register_user(name="Charlie", email="charlie@example.com")  # keyword
+       ```
 
 !!! example
 
