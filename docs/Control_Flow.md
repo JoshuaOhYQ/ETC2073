@@ -959,7 +959,7 @@ Python provides two ways to handle an arbitrary (variable) number of arguments i
 
 !!! example 
 
-    === "Arbitrary Positional Arguments (*args)"
+    === "Arbitrary Positional Arguments (```*args```)"
 
         - Allow you to pass multiple non-key arguments
         - 
@@ -967,7 +967,9 @@ Python provides two ways to handle an arbitrary (variable) number of arguments i
 
 
 
-    === "Arbitrary Keyword Arguments (**kwargs)"
+    === "Arbitrary Keyword Arguments (```**kwargs```)"
+
+        - Allow you to pass multiple keyword-arguments
 
 
 
