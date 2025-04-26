@@ -954,6 +954,10 @@ Keyword arguments (also called named arguments) allow you to pass arguments to a
            ```
 
 
+## Arbitary Arguments (Args-Kwargs)
+   Python provides two ways to handle an arbitrary (variable) number of arguments in functions:
+    
+
 
 
 
