@@ -977,6 +977,107 @@ Membership operators in Python are used to test whether a value or variable is f
 
         Membership operators are commonly used in conditional statements and loops to check for the presence or absence of elements.
 
+!!! example 
+
+    === "Lists"
+
+        ```py
+        fruits = ['apple', 'banana', 'cherry']
+        print('banana' in fruits)      # True
+        print('orange' not in fruits)  # True
+        ```
+        Output:
+        ```
+        True
+        True
+        ```
+
+    === "Strings"
+
+        ```py
+        message = "Hello, World!"
+        print('Hello' in message)      # True
+        print('Python' not in message) # True
+        ```
+        Output:
+        ```
+        True
+        True
+        ```
+
+    === "Tuples"
+
+        ```py
+        numbers = (1, 2, 3, 4, 5)
+        print(3 in numbers)            # True
+        print(6 not in numbers)       # True
+        ```
+        Output:
+        ```
+        True
+        True
+        ```
+
+    === "Sets"
+
+        ```py
+        unique_numbers = {1, 3, 5, 7}
+        print(5 in unique_numbers)     # True
+        print(2 not in unique_numbers) # True
+        ```
+        Output:
+        ```
+        True
+        True
+        ```
+
+    === "Dictionaries"
+
+        ```py
+        person = {'name': 'Alice', 'age': 25}
+        print('name' in person)        # True (checks keys)
+        print('Alice' in person)       # False (doesn't check values)
+        print('age' not in person)     # False
+        ```
+        Output:
+        ```
+        True
+        False
+        False
+        ```
+
+    === "Using if-else"
+
+        ```py
+        word = "APPLE"
+        letter = "E"
+
+        if letter in word:
+           print(f"There is a {letter}!")
+        else: 
+            print(f"{letter} was not found!") 
+        ```
+        Output:
+        ```
+        There is a E!
+        ```
+
+        ```py
+        word = "APPLE"
+        letter = "Z"
+
+        if letter in word:
+           print(f"There is a {letter}!")
+        else: 
+            print(f"{letter} was not found!") 
+        ```
+        Output:
+        ```
+        Z was not found!
+        ```
+
+
+
 
 
 
