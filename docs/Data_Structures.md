@@ -1076,6 +1076,104 @@ Membership operators in Python are used to test whether a value or variable is f
         Z was not found!
         ```
 
+## List Comprehensions
+List comprehensions provide a concise way to create lists in Python. They consist of brackets containing an expression followed by a ```for``` clause, then zero or more ```for``` or ```if``` clauses. They are compact and easier to read than traditional loops. 
+
+!!! Abstract "Basic Formula"
+
+    ```py
+    [expression for item in iterable]
+    ```
+
+
+!!! tip "Advantages"
+
+    - More concise and readable than traditional loops
+    - Generally faster than equivalent for-loop implementations
+    - Can replace many cases where you'd use ```map()``` and ```filter()```
+
+
+!!! example
+
+    === "Simple List Comprehension"
+
+        ```py 
+        # Create a list of squares from 0 to 9
+        squares = [x**2 for x in range(10)]
+        print(squares)
+        ```
+        Output:
+        ``` 
+        [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+        ```
+
+    === "With Conditional Filtering"
+
+        ```py 
+        # Get only even numbers
+        evens = [x for x in range(20) if x % 2 == 0]
+        print(evens)
+        ```
+        Output:
+        ``` 
+        [0, 2, 4, 6, 8, 10, 12, 14, 16, 18]
+        ```
+
+    === "With if-else Condition"
+
+        ```py 
+        # Classify numbers as 'even' or 'odd'
+        classified = ['even' if x % 2 == 0 else 'odd' for x in range(5)]
+        print(classified)
+        ```
+        Output:
+        ``` 
+        ['even', 'odd', 'even', 'odd', 'even']
+        ```
+
+    === "Nested Loops"
+
+        ```py 
+        # Create all possible pairs
+        pairs = [(x, y) for x in [1, 2, 3] for y in [3, 1, 4] if x != y]
+        print(pairs)
+        ```
+        Output:
+        ``` 
+        [(1, 3), (1, 4), (2, 3), (2, 1), (2, 4), (3, 1), (3, 4)]
+        ```
+
+    === "Flattening a Matrix"
+
+        ```py 
+        matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+        flattened = [num for row in matrix for num in row]
+        print(flattened)
+        ```
+        Output:
+        ``` 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9]
+        ```
+
+    === "String Manipulation"
+
+        ```py 
+        words = ['hello', 'world', 'python']
+        upper_words = [word.upper() for word in words]
+        print(upper_words)
+        ```
+        Output:
+        ``` 
+        ['HELLO', 'WORLD', 'PYTHON']
+        ```
+
+!!! Success "Python also supports:"
+
+    - **Dictionary comprehensions**: ```{key: value for item in iterable}```
+    - **Set comprehensions**: ```{expression for item in iterable}```
+    
+
+
 
 
 
