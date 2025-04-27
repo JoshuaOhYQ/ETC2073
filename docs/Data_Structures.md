@@ -959,6 +959,25 @@ An iterable is any Python **object or collection** capable of returning its elem
 
 
 ## Membership Operators
+Membership operators in Python are used to test whether a value or variable is found in a sequence (like strings, lists, tuples, sets, or dictionaries). There are two membership operators:
+
+!!! note 
+
+    === "Type of membership operators"
+
+        1. ```in``` - Returns ```True``` if the specified value is found in the sequence
+        2. ```not in``` - Returns ```True``` if the specified value is not found in the sequence
+
+    === "Other important notes"
+
+        - Membership operators are case-sensitive when used with strings
+        - For dictionaries, membership operators only check the keys by default
+        - These operators work with any iterable object in Python
+        - They are more readable alternatives to manually searching through sequences
+
+        Membership operators are commonly used in conditional statements and loops to check for the presence or absence of elements.
+
+
 
 
 
