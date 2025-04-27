@@ -830,9 +830,135 @@ Dictionaries are one of Python's most powerful and commonly used data structures
     print(help(capitals))
     ```
 
-   
+## Iterables 
+An iterable is any Python **object or collection** capable of returning its elements one at a time, allowing it to be iterated over in a loop. Iterables form the foundation of Python's iteration protocol.
+
+!!! Info "Additional Info"
+
+    === "Characteristics of Iterables"
+
+        1. Can be looped over using ```for``` loops
+        2. Can be used with functions that take sequences (```map()```, ```filter()```, etc.)
+        3. Many can be converted to other iterable types (lists, tuples, etc.)
+
+    === "Common Iterable Types"
+
+        **Basic Iterables:**
+
+        - Lists: ```[1, 2, 3]```
+        - Tuples: ```(1, 2, 3)```
+        - Strings: ```"hello"```
+        - Dictionaries (iterates over keys by default)
+        - Sets: ```{1, 2, 3}```
+
+        **Speical Iterables:**
+
+        - range objects: ```range(5)```
+        - File objects (iterate line by line)
+        - Generators and generator expressions
+        - zip, map, and filter objects
+
+!!! example
+
+    === "List"
+
+        ```py 
+        numbers = [1, 2, 3, 4, 5]
+
+        for number in numbers:
+            print(number)
+        ```
+        Output:
+        ```
+        1
+        2
+        3
+        4
+        5
+        ```
+
+    === "Tuples"
+
+        ```py 
+        numbers = (1, 2, 3, 4, 5)
+
+        for number in numbers:
+            print(number)
+        ```
+        Output:
+        ```
+        1
+        2
+        3
+        4
+        5
+        ```
+
+    === "Set"
+
+        ```py 
+        fruits = {"apple", "orange", "banana", "coconut"}
+
+        for fruit in fruits:
+            print(fruit)
+        ```
+        Output:
+        ```
+        apple
+        banana
+        orange
+        coconut
+        ```
+
+    === "String"
+
+        ```py 
+        name = "John Cena"
+
+        for character in name:
+            print(character, end=" ")
+        ```
+        Output:
+        ```
+        J o h n   C e n a 
+        ```
+
+    === "Dictionary"
+
+        ```py 
+        my_dictionary = {"A": 1, "B": 2, "C": 3}
+
+        for key, value in my_dictionary.items():
+            print(f"{key} = {value}")
+        ```
+        Output:
+        ```
+        A = 1
+        B = 2
+        C = 3
+        ```
+
+!!! Quote "Did you know !?!"
+
+    You can use the ```collections.abc.Iterable``` abstract base class to check if an object is iterable: 
+
+    ```py
+    from collections.abc import Iterable
+
+    def is_iterable(obj):
+        return isinstance(obj, Iterable)
+
+    print(is_iterable([1, 2, 3]))  # True
+    print(is_iterable(42))         # False
+    ```
+    Output:
+    ```
+    True
+    False
+    ```
 
 
+## Membership Operators
 
 
 
