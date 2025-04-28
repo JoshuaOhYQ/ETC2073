@@ -528,6 +528,130 @@ Nested loop is a loop inside another loop. It is used when you need to perform r
 
     Avoid using too many nested loops (e.g., 3+ levels) as it can slow down your program and increase complexity!
 
+
+## Match-case statement 
+```Match-case statement``` provides pattern matching capabilities similar to switch-case statements in other languages. It is an alternative to using many ```elif``` statements. It executes some code if a value matches a 'case'. 
+
+!!! success "key features"
+
+    - More powerful than traditional switch-case statements
+    - Can match patterns, not just values
+    - Supports destructuring of data structures
+    - Can include conditions (guards) in patterns
+    - Works with custom classes
+    - The _ acts as a wildcard/catch-all pattern
+
+!!! Info "Basic Syntax"
+
+    ```py
+    match subject:
+    case pattern1:
+        # handle pattern1
+    case pattern2:
+        # handle pattern2
+    case _:
+        # default case
+    ```
+
+!!! example 
+
+    === "Simple value matching"
+
+        ```py
+        def http_status(status):
+            match status:
+                case 200:
+                    return "OK"
+                case 404:
+                    return "Not found"
+                case 500:
+                    return "Server error"
+                case _:
+                    return "Unknown status"
+        ```
+
+    === "Pattern matching with types"
+
+        ```py
+        def check_type(value):
+            match value:
+                case int():
+                    print("Got an integer")
+                case str():
+                    print("Got a string")
+                case list():
+                    print("Got a list")
+                case _:
+                    print("Unknown type")
+        ```
+
+    === "Matching sequences and collections"
+
+        ```py
+        def process_list(lst):
+            match lst:
+                case [first, second, *rest]:
+                    print(f"First: {first}, Second: {second}, Rest: {rest}")
+                case [single]:
+                    print(f"Single element: {single}")
+                case []:
+                    print("Empty list")
+        ```
+
+    === "Matching dictionaries"
+
+        ```py
+        def process_dict(d):
+            match d:
+                case {"name": name, "age": age}:
+                    print(f"Name: {name}, Age: {age}")
+                case {"user": user}:
+                    print(f"User: {user}")
+                case _:
+                    print("Unknown dictionary format")
+        ```
+
+    === "Matching with conditions (guards)"
+
+        ```py
+        def check_number(n):
+            match n:
+                case x if x < 0:
+                    print("Negative")
+                case 0:
+                    print("Zero")
+                case x if x > 0:
+                    print("Positive")
+        ```
+
+    === "Matching class objects"
+
+        ```py
+        class Point:
+            def __init__(self, x, y):
+                self.x = x
+                self.y = y
+
+        def check_point(p):
+            match p:
+                case Point(x=0, y=0):
+                    print("Origin")
+                case Point(x=0, y=y):
+                    print(f"On Y axis at {y}")
+                case Point(x=x, y=0):
+                    print(f"On X axis at {x}")
+                case Point(x=x, y=y):
+                    print(f"Point at ({x}, {y})")
+                case _:
+                    print("Not a point")
+        ```
+        
+
+
+
+
+
+
 ## Function 
 A function in Python is a reusable block of code that performs a specific task. Functions help in organizing code, improving readability, and avoiding repetition.
 
