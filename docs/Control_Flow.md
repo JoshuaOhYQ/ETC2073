@@ -647,11 +647,6 @@ Nested loop is a loop inside another loop. It is used when you need to perform r
         ```
         
 
-
-
-
-
-
 ## Function 
 A function in Python is a reusable block of code that performs a specific task. Functions help in organizing code, improving readability, and avoiding repetition.
 
