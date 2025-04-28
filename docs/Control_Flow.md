@@ -530,7 +530,7 @@ Nested loop is a loop inside another loop. It is used when you need to perform r
 
 
 ## Match-case statement 
-```Match-case statement``` provides pattern matching capabilities similar to switch-case statements in other languages. It is an alternative to using many ```elif``` statements. It executes some code if a value matches a 'case'. 
+```Match-case statement``` provides pattern matching capabilities similar to switch-case statements in other languages. It is an alternative to using many ```elif``` statements. It executes some code if a value matches a ```case```. 
 
 !!! success "key features"
 
