@@ -545,12 +545,12 @@ Nested loop is a loop inside another loop. It is used when you need to perform r
 
     ```py
     match subject:
-    case pattern1:
-        # handle pattern1
-    case pattern2:
-        # handle pattern2
-    case _:
-        # default case
+        case pattern1:
+            # handle pattern1
+        case pattern2:
+            # handle pattern2
+        case _:
+            # default case
     ```
 
 !!! example 
