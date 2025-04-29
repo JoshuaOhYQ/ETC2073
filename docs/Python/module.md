@@ -198,6 +198,24 @@ The ```random``` module is a built-in Python module for generating pseudo-random
         print(random.sample(range(100), 5))  # 5 unique numbers 0-99
         ```
 
+    === "Seeding (Reproducibility)"
+
+        ```seed()``` **- Random integer between a and b (inclusive)**
+
+        ```py 
+        random.seed(42)  # Initialize with fixed seed
+        print(random.random())  # Always 0.6394267984578837 with seed 42
+        ```
+
+    === "Statistical Distributions"
+
+        - ```gauss(mu, sigma)``` - Gaussian distribution
+        - ```expovariate(lambd)``` - Exponential distribution
+        - ```betavariate(alpha, beta)``` - Beta distribution
+        
+
+
+
     
 
         
