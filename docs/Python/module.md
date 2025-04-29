@@ -100,14 +100,14 @@ Third-party modules are Python packages created and maintained by developers out
     - ```matplotlib```: Data visualization
     - ```scikit-learn```: Machine learning
 
-    ** Wen Development:**
+    **Web Development:**
 
     - ```Django```: High-level web framework
     - ```Flask```: Micro web framework
     - ```requests```: HTTP requests
     - ```BeautifulSoup```: Web scraping
 
-    ** Others:**
+    **Others:**
 
     - ```Pillow```: Image processing
     - ```pygame```: Game development
