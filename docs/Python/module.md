@@ -116,17 +116,17 @@ Third-party modules are Python packages created and maintained by developers out
 
     **More details about third-party modules will be discussed individually in other sections !!**
 
-!!! note "How to use"
+!!! note "How to Use"
 
     1. **Installation** (using pip):
        
        ```bash
-       pip install package name
+       pip install package-name
        ```
 
-    2. **Importing** (using pip):
+    2. **Importing** in Python:
        
-       ```py
+       ```python
        import numpy as np
        from flask import Flask
        ```
@@ -135,4 +135,24 @@ Third-party modules are Python packages created and maintained by developers out
 ## Built-in Modules
 Built-in modules are Python libraries that come pre-installed with Python, providing essential functionality without requiring additional installation. These modules are part of Python's standard library and are **pre-installed**. 
 
-### Random module
+### Random module 
+The ```random``` module is a built-in Python module for generating pseudo-random numbers and performing random operations. It's commonly used for simulations, games, statistical sampling, and any application requiring randomization.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
