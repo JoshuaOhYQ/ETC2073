@@ -116,6 +116,7 @@ nav:
     - "Genetic Algorithm": Chapter3.md
   - Python 3:
     - "Introduction": Python/Python 3.md
+    
     - "Python Basic": Python/BasicPython.md
     - "Control Flow": Python/Control_Flow.md
     - "Data Structures": Python/Data_Structures.md
