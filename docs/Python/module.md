@@ -165,14 +165,14 @@ The ```random``` module is a built-in Python module for generating pseudo-random
         print(random.randint(1, 6))  # Simulate dice roll (1-6)
         ```
 
-        ```randrange(start, stop, step)``` - Random element from range()
+        ```randrange(start, stop, step)``` **- Random element from range()**
         
         ```py
         import random
         print(random.randrange(0, 100, 5))  # Multiple of 5 between 0-100
         ```
 
-        For large ranges, ```randrange()``` is more efficient than ```randint()```!
+        **For large ranges, ```randrange()``` is more efficient than ```randint()```!**
 
     === "Sequence Operations"
 
