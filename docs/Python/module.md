@@ -91,7 +91,7 @@ User-defined modules are Python files created by programmers to organize and reu
 ## Third-party Modules
 Third-party modules are Python packages created and maintained by developers outside of Python's core development team. These modules extend Python's functionality beyond what's available in the standard library. These modules are **not included with Python** and must be installed seperately and often focused on specific domains such as data science, web development, etc with **specialized functionality**. 
 
-!!!  info "Popular Third-Party Modules"
+!!! info "Popular Third-Party Modules"
 
     **Data Science & Analytics:**
     
