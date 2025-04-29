@@ -89,4 +89,42 @@ User-defined modules are Python files created by programmers to organize and reu
 
 
 ## Third-party Modules
+Third-party modules are Python packages created and maintained by developers outside of Python's core development team. These modules extend Python's functionality beyond what's available in the standard library. These modules are **not included with Python** and must be installed seperately and often focused on specific domains such as data science, web development, etc with **specialized functionality**.
 
+!!!  info "Popular Third-Party Modules"
+
+    **Data Science & Analytics:**
+    
+    - ```Numpy```: Numerical computing
+    - ```pandas```: Data manipulation and analysis
+    - ```matplotlib```: Data visualization
+    - ```scikit-learn```: Machine learning
+
+    ** Wen Development:**
+
+    - ```Django```: High-level web framework
+    - ```Flask```: Micro web framework
+    - ```requests```: HTTP requests
+    - ```BeautifulSoup```: Web scraping
+
+    ** Others:**
+
+    - ```Pillow```: Image processing
+    - ```pygame```: Game development
+    - ```openpyxl```: Excel file manipulation
+    - ```selenium```: Web browser automation
+
+!!! note "How to use"
+
+    1. **Installation** (using pip):
+       
+       ```bash
+       pip install package name
+       ```
+
+    2. **Importing** (using pip):
+       
+       ```py
+       import numpy as np
+       from flask import Flask
+       ```
