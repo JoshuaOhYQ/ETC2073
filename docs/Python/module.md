@@ -158,6 +158,48 @@ The ```random``` module is a built-in Python module for generating pseudo-random
 
     === "Integer Generation"
 
+        ```randint(a, b)``` **- Random integer between a and b (inclusive)**
+
+        ```py 
+        import random
+        print(random.randint(1, 6))  # Simulate dice roll (1-6)
+        ```
+
+        ```randrange(start, stop, step)``` - Random element from range()
+        
+        ```py
+        import random
+        print(random.randrange(0, 100, 5))  # Multiple of 5 between 0-100
+        ```
+
+    === "Sequence Operations"
+
+        ```choice(seq)``` **- Random element from non-empty sequence**
+
+        ```py 
+        import random
+        colors = ['red', 'green', 'blue']
+        print(random.choice(colors))  # e.g., 'green'
+        ```
+
+        ```shuffle(seq)``` **- Shuffle sequence in place**
+        
+        ```py
+        import random
+        cards = list(range(1, 11))  # [1, 2, 3,...10]
+        random.shuffle(cards)
+        print(cards)  # e.g., [7, 2, 9, 1,...]
+        ```
+
+        ```sample(population, k)``` **- k unique random elements**
+        
+        ```py
+        import random
+        print(random.sample(range(100), 5))  # 5 unique numbers 0-99
+        ```
+
+    
+
         
 
 
