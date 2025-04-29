@@ -172,6 +172,8 @@ The ```random``` module is a built-in Python module for generating pseudo-random
         print(random.randrange(0, 100, 5))  # Multiple of 5 between 0-100
         ```
 
+        For large ranges, ```randrange()``` is more efficient than ```randint()```!
+
     === "Sequence Operations"
 
         ```choice(seq)``` **- Random element from non-empty sequence**
