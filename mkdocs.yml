@@ -119,6 +119,7 @@ nav:
     - "Python Basic": BasicPython.md
     - "Control Flow": Control_Flow.md
     - "Data Structures": Data_Structures.md
+    - "Modules": docs/Python/module.md
     
     
 
