@@ -49,5 +49,21 @@ User-defined modules are Python files created by programmers to organize and reu
       print(mymodule.PI)              # Output: 3.14159
       ```
 
+      **Alternative Import methods**
+
+      ```py 
+      # Import specific attributes
+      from mymodule import greet, PI
+      print(greet("Bob"))  # No need for 'mymodule.' prefix
+
+      # Import with an alias
+      import mymodule as mm
+      print(mm.greet("Charlie"))
+
+      # Import everything (not recommended)
+      from mymodule import *
+      print(greet("Dave"))
+      ```
+
 
 
