@@ -118,13 +118,13 @@ Third-party modules are Python packages created and maintained by developers out
 
 !!! note "How to Use"
 
-    1. **Installation** (using pip):
+    - **Installation** (using pip):
        
        ```bash
        pip install package-name
        ```
 
-    2. **Importing** in Python:
+    - **Importing** in Python:
        
        ```python
        import numpy as np
@@ -157,7 +157,7 @@ The ```random``` module is a built-in Python module for generating pseudo-random
         ```
 
     === "Integer Generation"
-    
+
         
 
 
