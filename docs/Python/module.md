@@ -89,7 +89,7 @@ User-defined modules are Python files created by programmers to organize and reu
 
 
 ## Third-party Modules
-Third-party modules are Python packages created and maintained by developers outside of Python's core development team. These modules extend Python's functionality beyond what's available in the standard library. These modules are **not included with Python** and must be installed seperately and often focused on specific domains such as data science, web development, etc with **specialized functionality**.
+Third-party modules are Python packages created and maintained by developers outside of Python's core development team. These modules extend Python's functionality beyond what's available in the standard library. These modules are **not included with Python** and must be installed seperately and often focused on specific domains such as data science, web development, etc with **specialized functionality**. 
 
 !!!  info "Popular Third-Party Modules"
 
@@ -114,6 +114,8 @@ Third-party modules are Python packages created and maintained by developers out
     - ```openpyxl```: Excel file manipulation
     - ```selenium```: Web browser automation
 
+    **More details about third-party modules will be discussed individually in other sections!!**
+
 !!! note "How to use"
 
     1. **Installation** (using pip):
@@ -128,3 +130,9 @@ Third-party modules are Python packages created and maintained by developers out
        import numpy as np
        from flask import Flask
        ```
+
+
+## Built-in Modules
+Built-in modules are Python libraries that come pre-installed with Python, providing essential functionality without requiring additional installation. These modules are part of Python's standard library and are **pre-installed**. 
+
+### Random module
