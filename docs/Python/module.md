@@ -216,7 +216,8 @@ The ```random``` module is a built-in Python module for generating pseudo-random
         - ```betavariate(alpha, beta)``` - Beta distribution
         
 
-
+### Math module
+The ```math``` module is a built-in Python module that provides mathematical functions and constants. It's essential for scientific computing, data analysis, and any application requiring advanced mathematical operations.
 
     
 
