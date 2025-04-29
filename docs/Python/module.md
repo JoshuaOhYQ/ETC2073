@@ -114,7 +114,7 @@ Third-party modules are Python packages created and maintained by developers out
     - ```openpyxl```: Excel file manipulation
     - ```selenium```: Web browser automation
 
-    **More details about third-party modules will be discussed individually in other sections!!**
+    **More details about third-party modules will be discussed individually in other sections !!**
 
 !!! note "How to use"
 
