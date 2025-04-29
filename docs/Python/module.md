@@ -138,6 +138,28 @@ Built-in modules are Python libraries that come pre-installed with Python, provi
 ### Random module 
 The ```random``` module is a built-in Python module for generating pseudo-random numbers and performing random operations. It's commonly used for simulations, games, statistical sampling, and any application requiring randomization.
 
+!!! example 
+
+    === "Basic Random Numbers"
+
+        ```random()``` **- Returns float between 0.0 and 1.0**
+
+        ```py
+        import random
+        print(random.random())  # e.g., 0.5488135039273248
+        ```
+
+        ```uniform(a, b)``` **- Returns float between a and b**
+
+        ```py
+        import random
+        print(random.uniform(1, 10))  # e.g., 5.711324
+        ```
+
+    === "Integer Generation"
+    
+        
+
 
 
 
