@@ -1,5 +1,3 @@
-# Introduction
-
 ???+ info "What is this section about?"
     Python 3 is a structured learning program designed to teach the Python programming language (version 3.x), covering fundamental concepts, advanced features, and practical applications.
 

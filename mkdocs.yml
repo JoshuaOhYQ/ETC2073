@@ -115,7 +115,7 @@ nav:
     - "Fuzzy Logic and Fuzzy Inference Systems": Chapter2.md
     - "Genetic Algorithm": Chapter3.md
   - Python 3:
-    - "Introduction": Python/Python 3.md
+    - Python/index.md
     - "Python Basic": Python/BasicPython.md
     - "Control Flow": Python/Control_Flow.md
     - "Data Structures": Python/Data_Structures.md
