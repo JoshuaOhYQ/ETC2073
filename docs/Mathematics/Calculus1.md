@@ -1,4 +1,4 @@
-# Calculus 1
+# Basic Calculus
 Python is a powerful tool for performing calculus operations, both symbolically (using libraries like SymPy) and numerically (using libraries like NumPy and SciPy).
 
 !!! Info
