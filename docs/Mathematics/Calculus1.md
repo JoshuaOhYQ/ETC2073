@@ -36,8 +36,15 @@ A hole in a graph occurs when a rational function has a common factor in its num
     ```py
     x = 2
     h = 0.00001
-    
 
+    y_right = (3*((x+h)-2))/((x+h) - 2)
+    y_left = (3*((x-h)-2))/((x-h) - 2)
+
+    if round(y_right) != round(y_left):
+        print(f"Limit does not exist at x = {x}, as left hand limit does not equal to right hand limit!")
+
+    else:
+        print(f"Limit exist since both left hand limit and right hand limit are the same, {y_right} and {y_left}")
     ```
 
 
