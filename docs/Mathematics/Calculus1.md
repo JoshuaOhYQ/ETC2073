@@ -27,15 +27,15 @@ A hole in a graph occurs when a rational function has a common factor in its num
 
 !!! example
 
-$$ y = \frac{3(\x - 2)}{(\x - 2)} $$
+    $$ y = \frac{3(x - 2)}{(x - 2)} $$
 
-**To solve this in python:**
+    **To solve this in python:**
 
-```py
-x = 2
-h = 0.00001
+    ```py
+    x = 2
+    h = 0.00001
 
-```
+    ````
 
 
 
