@@ -27,6 +27,8 @@ A hole in a graph occurs when a rational function has a common factor in its num
 
 !!! example
 
+    **Given the equation:**
+
     $$ y = \frac{3(x - 2)}{(x - 2)} $$
 
     **To solve this in python:**
@@ -34,8 +36,9 @@ A hole in a graph occurs when a rational function has a common factor in its num
     ```py
     x = 2
     h = 0.00001
+    
 
-    ````
+    ```
 
 
 
