@@ -47,6 +47,10 @@ A hole in a graph occurs when a rational function has a common factor in its num
         print(f"Limit exist since both left hand limit and right hand limit are the same, {y_right} and {y_left}")
     ```
 
+!!! Sucess 
+
+    You can also try this with other equations, x values and h values!!
+
 
 
 
