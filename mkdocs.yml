@@ -121,6 +121,9 @@ nav:
     - "Control Flow": Python/Control_Flow.md
     - "Data Structures": Python/Data_Structures.md
     - "Module": Python/module.md
+  
+  - Mathematics:
+    - "Basic Calculus": Mathematics/Calculus1.md
 
 
     
