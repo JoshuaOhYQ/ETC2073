@@ -1325,7 +1325,7 @@ This Python idiom checks if a script is being run directly (rather than imported
 
     === "Multiple Modules **(without the idiom)**"
 
-        **If we don't have ```if __name__ == "__main__"```**
+        **If we don't use ```if __name__ == "__main__"``` -**
 
         **script1:**
 
