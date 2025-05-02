@@ -1257,6 +1257,7 @@ Scope resolution in Python determines how variables are looked up and where they
         def my_func():
             global x
             x = 20  # Modifies the global x
+            print(x)
 
         my_func()
         ```
@@ -1264,8 +1265,7 @@ Scope resolution in Python determines how variables are looked up and where they
         Output:
 
         ```py
-
-
+        20
         ```
 
     === "Nonlocal"
@@ -1289,8 +1289,7 @@ Scope resolution in Python determines how variables are looked up and where they
         Output:
 
         ```py
-
-
+        20
         ```
 
 
