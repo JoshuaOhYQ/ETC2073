@@ -110,10 +110,7 @@ markdown_extensions:
   
 nav:
   - Home: index.md
-  - Basic Algorithms:
-    - "First Order Logic and Expert Systems": Chapter1.md
-    - "Fuzzy Logic and Fuzzy Inference Systems": Chapter2.md
-    - "Genetic Algorithm": Chapter3.md
+
   - Python 3:
     - "Introduction": Python/Python 3.md
     
@@ -121,6 +118,11 @@ nav:
     - "Control Flow": Python/Control_Flow.md
     - "Data Structures": Python/Data_Structures.md
     - "Module": Python/module.md
+  
+  - Basic Algorithms:
+    - "First Order Logic and Expert Systems": Chapter1.md
+    - "Fuzzy Logic and Fuzzy Inference Systems": Chapter2.md
+    - "Genetic Algorithm": Chapter3.md
   
   - Mathematics:
     - "Basic Calculus": Mathematics/Calculus1.md
