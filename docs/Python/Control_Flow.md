@@ -1394,7 +1394,9 @@ This Python idiom checks if a script is being run directly (rather than imported
         Goodbye!
         ```
 
+!!! Success 
 
+    It is good practice to include this idiom of ```if __name__ == "__main__```, as **it makes your code more modular, helps with readability, leaves no global variable and avoid any unintended execution** !
 
 
 
