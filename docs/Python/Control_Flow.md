@@ -1398,6 +1398,93 @@ This Python idiom checks if a script is being run directly (rather than imported
 
     It is good practice to include this idiom of ```if __name__ == "__main__```, as **it makes your code more modular, helps with readability, leaves no global variable and avoid any unintended execution** !
 
+## Lambda function 
+A lambda function (also called an anonymous function) is a small, unnamed function defined using the ```lambda``` keyword in Python. It can take any number of arguments but must consist of a single expression. Unlike regular functions defined with ```def```, lambda functions don’t have a name and are usually used in situations where you need a simple function for a short period of time.
+
+
+!!! info "Key Characteristics"
+
+    1. **Anonymous:** It doesn’t have a name (unless assigned to a variable).
+
+    2. **Single Expression:** Can only contain one expression (no statements like if, for, etc.).
+
+    3. **Inline Usage:** Often used where a short function is needed temporarily.
+
+    4. It is also commonly used as **arguments** to higher-order functions such as ```map()```, ```filter()```, and ```sorted()```.
+    
+
+!!! Abstract "Basic Syntax"
+
+    ```py
+    lambda [arguments]: [expression] 
+    ```
+
+!!! example 
+
+    == "Basic Lambda Function"
+
+        ```py
+        add = lambda x, y: x + y
+        print(add(3, 5))  # Output: 8
+        ```
+
+    == "Lambda with ```map()```"
+
+        **The ```map()``` function applies the given lambda function to each item in a list.**
+
+        ```py
+        numbers = [1, 2, 3, 4, 5] 
+
+        squared = list(map(lambda x: x ** 2, numbers)) 
+
+        print(squared)  # Output: [1, 4, 9, 16, 25] 
+        ```
+
+        The lambda function square each number in the original list. The ```map()``` function applies this lambda to each element, resulting in a new list where every number is squared. 
+
+    == "Lambda with ```filter()```"
+
+        **The ```filter()``` function creates a new list of elements for which the given lambda function returns True.**
+
+        ```py
+        numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] 
+
+        even_numbers = list(filter(lambda x: x % 2 == 0, numbers)) 
+
+        print(even_numbers)  # Output: [2, 4, 6, 8, 10] 
+        ```
+
+        The lambda function checks if a number is even. The ```filter()``` function uses this lambda to keep only the even numbers from the original list, creating a new list containing only even numbers. 
+
+    == "Lambda with ```sorted()```"
+
+        **The ```sorted()``` function can use a lambda function as a key for custom sorting.**
+
+        ```py
+        students = [('Alice', 'A', 15), ('Bob', 'B', 12), ('Charlie', 'A', 20)] 
+
+        sorted_students = sorted(students, key=lambda x: x[2]) 
+
+        print(sorted_students) 
+
+        # Output: [('Bob', 'B', 12), ('Alice', 'A', 15), ('Charlie', 'A', 20)] 
+        ```
+
+        The lambda function is used as the key for sorting. It tells the ```sorted()``` function to use the third element (index 2) of each tuple for comparison. As a result, the list of students is sorted based on their age (the third element in each tuple).
+
+!!! tip "Best Practices"
+
+    **Use lambda functions when:**
+
+    - You need a simple function for a short period.
+    - You’re passing a simple function as an argument to higher-order functions.
+
+    **Avoid lambda functions when:**
+
+    - The operation is complex or requires multiple expressions.
+    - You need to reuse the function multiple times (define a regular function instead).
+
+
 
 
 
