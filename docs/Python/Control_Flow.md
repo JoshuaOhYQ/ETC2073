@@ -1352,6 +1352,46 @@ This Python idiom checks if a script is being run directly (rather than imported
         Goodbye!
         ```
 
+        **If we use ```if __name__ == "__main__"``` -**
+
+        **script1:**
+
+        ```py 
+        def favourite_food(food):
+            print(f"Your favourite food is {food}")
+        
+        def main():
+            print("This is script 1")
+            favourite_food("pizza")
+            print("Goodbye!")
+
+        if __name__ == '__main__':
+            main()
+        ```
+
+        **script2:**
+
+        ```py
+        from script1 import *
+
+        def favourite_drink(drink):
+            print(f"Your favourite drink is {drink}")
+
+        print("This is script2")
+        favourite_food("sushi")
+        favourite_drink("coffee")
+        print("Goodbye!")
+        ```
+
+        **Now we run script2, the output will show:**
+
+        ```
+        This is script2
+        Your favourite food is sushi
+        Your favourite drink is coffee 
+        Goodbye!
+        ```
+
 
 
 
