@@ -1268,7 +1268,32 @@ Scope resolution in Python determines how variables are looked up and where they
 
         ```
 
-        
+    === "Nonlocal"
+
+        **Modify a variable from an enclosing (non-global) scope**
+
+        ```py
+        def outer():
+            x = 10
+            
+            def inner():
+                nonlocal x
+                x = 20  # Modifies outer's x
+            
+            inner()
+            print(x)  # Prints 20
+
+        outer()
+        ```
+
+        Output:
+
+        ```py
+
+
+        ```
+
+
 
 
 
