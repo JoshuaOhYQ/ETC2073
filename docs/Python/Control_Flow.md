@@ -1323,7 +1323,7 @@ This Python idiom checks if a script is being run directly (rather than imported
             main()
         ```
 
-    === "Multiple Modules"
+    === "Multiple Modules (without the idiom)"
 
         **If we don't have ```if __name__ == "__main__"```**
 
