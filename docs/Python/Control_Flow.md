@@ -1194,7 +1194,81 @@ Python provides two ways to handle an arbitrary (variable) number of arguments i
         ```
 
 
+## Scope Resolution
+Scope resolution in Python determines how variables are looked up and where they can be accessed. Python follows the LEGB rule for name resolution:
 
+!!! Info "LEGB Rule (Order of Scope Resolution)" 
+
+    1. **L (Local):** Names defined inside the current function
+
+    2. **E (Enclosing):** Names in the local scope of enclosing functions (for nested functions)
+
+    3. **G (Global):** Names defined at the module level
+
+    4. **B (Built-in):** Names built into Python (eg. value of PI in math module)
+
+!!! example "Example of LEGB"
+
+    === "Local"
+
+        ```py
+        def my_func():
+        x = 10  # Local variable
+        print(x)
+        ```
+
+    === "Enclosing Scope"
+
+        ```py
+        def outer():
+            x = 10  # Enclosing scope variable
+        
+            def inner():
+                print(x)  # Accesses x from enclosing scope
+            
+            inner()
+        ```
+
+    === "Global Scope"
+
+        ```py
+        x = 10  # Global variable
+
+        def my_func():
+            print(x)  # Accesses global x
+        ```
+
+    === "Built-in Scope"
+
+        ```py
+        def my_func():
+            print(len([1, 2, 3]))  # len is a built-in function
+        ```
+
+!!! example "Modifying Scope Behavior"
+
+    === "Global"
+
+        **Modify a global variable from a local scope**
+
+        ```py
+        x = 10
+
+        def my_func():
+            global x
+            x = 20  # Modifies the global x
+
+        my_func()
+        ```
+
+        Output:
+
+        ```py
+
+
+        ```
+
+        
 
 
 
