@@ -1352,6 +1352,8 @@ This Python idiom checks if a script is being run directly (rather than imported
         Goodbye!
         ```
 
+    === "Multiple Modules **(with the idiom)**"
+
         **If we use ```if __name__ == "__main__"``` -**
 
         **script1:**
