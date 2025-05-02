@@ -1294,7 +1294,7 @@ Scope resolution in Python determines how variables are looked up and where they
 
 
 ## If __name__ == "__main__"
-This Python idiom checks if a script is being run directly (rather than imported as a module). This also prevents the code from running when the file is imported as a module, while allowing it to run when executed directly. In simple words, sometimes we want the functionality of a program without executing the main body of code, for example a python library (math module).
+This Python idiom checks if a script is being run directly (rather than imported as a module). This also prevents the code from running when the file is imported as a module, while allowing it to run when executed directly. In simple words, **sometimes we want the functionality of a program without executing the main body of code**, for example a python library (math module).
 
 !!! tip "Key Points"
 
