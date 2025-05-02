@@ -225,8 +225,85 @@ The ```math``` module is a built-in Python module that provides mathematical fun
     import math
     ```
 
-        
+!!! example 
 
+    === "Commonly Used Constants"
+
+        ```py 
+        math.pi       # π (pi) ≈ 3.141592653589793
+        math.e        # Euler's number ≈ 2.718281828459045
+        math.tau      # Tau (2π) ≈ 6.283185307179586
+        math.inf      # Infinity
+        math.nan      # Not a Number
+        ```
+
+    === "Number-Theoretic and Representation Functions"
+
+        ```py
+        math.ceil(x)    # Smallest integer ≥ x
+        math.floor(x)   # Largest integer ≤ x
+        math.trunc(x)   # Truncates x to an integer
+        math.fabs(x)    # Absolute value as float
+        math.factorial(x) # Factorial of x
+        math.gcd(a, b)  # Greatest common divisor
+        math.isfinite(x) # Check if x is finite
+        math.isinf(x)    # Check if x is infinity
+        math.isnan(x)    # Check if x is NaN
+        ```
+
+    === "Power and Logarithmic Functions"
+
+        ```py
+        math.pow(x, y)   # x raised to power y
+        math.sqrt(x)     # Square root of x
+        math.exp(x)      # e raised to power x
+        math.log(x[, base]) # Logarithm of x (default base e)
+        math.log10(x)    # Base-10 logarithm
+        math.log2(x)     # Base-2 logarithm
+        ```
+
+    === "Trigonometric Functions"
+
+        ```py
+        math.sin(x)     # Sine of x radians
+        math.cos(x)     # Cosine of x radians
+        math.tan(x)     # Tangent of x radians
+        math.asin(x)    # Arc sine (in radians)
+        math.acos(x)    # Arc cosine (in radians)
+        math.atan(x)    # Arc tangent (in radians)
+        math.atan2(y, x) # atan(y / x) in radians
+        math.hypot(x, y) # Euclidean distance (sqrt(x² + y²))
+        ```
+
+    === "Angular Conversion"
+
+        ```py
+        math.degrees(x)  # Convert radians to degrees
+        math.radians(x)  # Convert degrees to radians
+        ```
+
+    === "Hyperbolic Functions"
+
+        ```py
+        math.sinh(x)    # Hyperbolic sine
+        math.cosh(x)    # Hyperbolic cosine
+        math.tanh(x)    # Hyperbolic tangent
+        math.asinh(x)   # Inverse hyperbolic sine
+        math.acosh(x)   # Inverse hyperbolic cosine
+        math.atanh(x)   # Inverse hyperbolic tangent
+        ```
+
+    === "Special Functions"
+
+        ```py
+        math.erf(x)     # Error function
+        math.erfc(x)    # Complementary error function
+        math.gamma(x)   # Gamma function
+        math.lgamma(x)  # Natural log of absolute value of Gamma
+        ```
+    For the entire list you may refer to [here](https://www.w3schools.com/python/module_math.asp)
+
+    
 
 
 
