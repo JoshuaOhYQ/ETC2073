@@ -301,7 +301,7 @@ The ```math``` module is a built-in Python module that provides mathematical fun
         math.gamma(x)   # Gamma function
         math.lgamma(x)  # Natural log of absolute value of Gamma
         ```
-    For the entire list you may refer to [here](https://www.w3schools.com/python/module_math.asp)
+    For the entire list you may refer to [Source: W3Schools](https://www.w3schools.com/python/module_math.asp)
 
     
 
