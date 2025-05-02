@@ -1421,14 +1421,14 @@ A lambda function (also called an anonymous function) is a small, unnamed functi
 
 !!! example 
 
-    == "Basic Lambda Function"
+    === "Basic Lambda Function"
 
         ```py
         add = lambda x, y: x + y
         print(add(3, 5))  # Output: 8
         ```
 
-    == "Lambda with ```map()```"
+    === "Lambda with ```map()```"
 
         **The ```map()``` function applies the given lambda function to each item in a list.**
 
@@ -1442,7 +1442,7 @@ A lambda function (also called an anonymous function) is a small, unnamed functi
 
         The lambda function square each number in the original list. The ```map()``` function applies this lambda to each element, resulting in a new list where every number is squared. 
 
-    == "Lambda with ```filter()```"
+    === "Lambda with ```filter()```"
 
         **The ```filter()``` function creates a new list of elements for which the given lambda function returns True.**
 
@@ -1456,7 +1456,7 @@ A lambda function (also called an anonymous function) is a small, unnamed functi
 
         The lambda function checks if a number is even. The ```filter()``` function uses this lambda to keep only the even numbers from the original list, creating a new list containing only even numbers. 
 
-    == "Lambda with ```sorted()```"
+    === "Lambda with ```sorted()```"
 
         **The ```sorted()``` function can use a lambda function as a key for custom sorting.**
 
