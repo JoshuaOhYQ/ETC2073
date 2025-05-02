@@ -1293,9 +1293,22 @@ Scope resolution in Python determines how variables are looked up and where they
         ```
 
 
+## If __name__ == "__main__"
+This Python idiom checks if a script is being run directly (rather than imported as a module). 
 
+!!! tip "Key Points"
 
+    1. Double equals (==): You used a single equals (=), which is assignment. You need the comparison operator ==.
 
+    2. Double underscores: "__name__" has two underscores on each side.
+
+    3. Quotes around "main": The string should be in quotes (either single or double).
+
+!!! Abstract "How It Works"
+
+    - When a Python script runs directly, its ```__name__``` is set to ```"__main__"```
+
+    - When imported as a module, ```__name__``` is set to the module's name
 
 
 
