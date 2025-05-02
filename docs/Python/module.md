@@ -214,7 +214,8 @@ The ```random``` module is a built-in Python module for generating pseudo-random
         - ```gauss(mu, sigma)``` - Gaussian distribution
         - ```expovariate(lambd)``` - Exponential distribution
         - ```betavariate(alpha, beta)``` - Beta distribution
-        
+
+    For the entire list you may refer to [Source: W3Schools](https://www.w3schools.com/python/module_random.asp)
 
 ### Math module
 The ```math``` module is a built-in Python module that provides mathematical functions and constants. It's essential for scientific computing, data analysis, and any application requiring advanced mathematical operations.
