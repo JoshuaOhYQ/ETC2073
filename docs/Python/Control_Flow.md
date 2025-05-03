@@ -1194,6 +1194,19 @@ Python provides two ways to handle an arbitrary (variable) number of arguments i
         ```
 
 
+## Recursive Functions
+A recursive function is a function that calls itself in its definition. It's a powerful programming technique that can solve problems by breaking them down into smaller, similar subproblems.
+
+!!! info "Key Characteristics"
+
+    1. **Base case:** Should be defined in every recursive function, as having a base case helps to avoid infinite recursions.
+
+    2. **Recursive case:* The function calls itself with a modified input that moves toward the base case. 
+
+!!! example
+
+    
+
 ## Scope Resolution
 Scope resolution in Python determines how variables are looked up and where they can be accessed. Python follows the LEGB rule for name resolution:
 
