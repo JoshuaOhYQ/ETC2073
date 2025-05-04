@@ -1231,6 +1231,41 @@ A recursive function is a function that calls itself in its definition. It's a p
         120
         ```
 
+    === "Fibonacci Sequence"
+
+        ```py
+        def fibonacci(n):
+            # Base cases
+            if n == 0:
+                return 0
+            elif n == 1:
+                return 1
+            # Recursive case
+            else:
+                return fibonacci(n - 1) + fibonacci(n - 2)
+
+        fibonacci(5)
+        ```
+
+        Output:
+
+        ```
+
+        ```
+
+!!! Warning "Important Considerations"
+
+    1. **Termination Condition:** Without a proper base case, the function will recurse infinitely
+
+    2. **Stack Overflow:** Deep recursion may hit language recursion depth limits
+
+    3. **Memory Usage:** Each recursive call adds to the call stack
+
+    4. **Performance:** Some recursive solutions can be inefficient 
+    
+
+
+
     
 
 ## Scope Resolution
