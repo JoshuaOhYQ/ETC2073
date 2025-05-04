@@ -1250,7 +1250,7 @@ A recursive function is a function that calls itself in its definition. It's a p
         Output:
 
         ```
-
+        5
         ```
 
 !!! Warning "Important Considerations"
