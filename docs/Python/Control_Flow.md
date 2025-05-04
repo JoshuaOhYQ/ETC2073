@@ -1201,7 +1201,7 @@ A recursive function is a function that calls itself in its definition. It's a p
 
     1. **Base case:** Should be defined in every recursive function, as having a base case helps to avoid infinite recursions.
 
-    2. **Recursive case:* The function calls itself with a modified input that moves toward the base case. 
+    2. **Recursive case:** The function calls itself with a modified input that moves toward the base case. 
 
 !!! example
 
