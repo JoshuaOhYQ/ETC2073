@@ -1205,31 +1205,53 @@ A recursive function is a function that calls itself in its definition. It's a p
 
 !!! example
 
-    **Factorial Function: **
+    === "Factorial Function"
 
-    ```py 
-    def factorial(n):
-        # Base case
-        if n == 0 or n == 1:
-            return 1
-        # Recursive case
-        else:
-            return n * factorial(n - 1)
+        ```py 
+        def factorial(n):
+            # Base case
+            if n == 0 or n == 1:
+                return 1
+            # Recursive case
+            else:
+                return n * factorial(n - 1)
 
-    print(factorial(5))
-    # call stack:  [{'input': 5}]
-    # call stack:  [{'input': 4}]
-    # call stack:  [{'input': 3}]
-    # call stack:  [{'input': 2}]
-    # base case reached! Num is 1.
-    # 120
-    ```
+        print(factorial(5))
+        # call stack:  [{'input': 5}]
+        # call stack:  [{'input': 4}]
+        # call stack:  [{'input': 3}]
+        # call stack:  [{'input': 2}]
+        # base case reached! Num is 1.
+        # 120
+        ```
 
-    Output:
+        Output:
 
-    ```
-    120
-    ```
+        ```
+        120
+        ```
+
+    === "Fibonacci Sequence"
+
+        ```py
+        def fibonacci(n):
+            # Base cases
+            if n == 0:
+                return 0
+            elif n == 1:
+                return 1
+            # Recursive case
+            else:
+                return fibonacci(n - 1) + fibonacci(n - 2)
+
+        print(fibonacci(6))
+        ```
+
+        Output:
+
+        ```
+        8
+        ```
 
 
 !!! Warning "Important Considerations"
