@@ -1216,7 +1216,7 @@ A recursive function is a function that calls itself in its definition. It's a p
             else:
                 return n * factorial(n - 1)
 
-        factorial(5)
+        print(factorial(5))
         # call stack:  [{'input': 5}]
         # call stack:  [{'input': 4}]
         # call stack:  [{'input': 3}]
@@ -1244,7 +1244,7 @@ A recursive function is a function that calls itself in its definition. It's a p
             else:
                 return fibonacci(n - 1) + fibonacci(n - 2)
 
-        fibonacci(5)
+        print(fibonacci(5))
         ```
 
         Output:
