@@ -1262,11 +1262,7 @@ A recursive function is a function that calls itself in its definition. It's a p
     3. **Memory Usage:** Each recursive call adds to the call stack
 
     4. **Performance:** Some recursive solutions can be inefficient 
-    
 
-
-
-    
 
 ## Scope Resolution
 Scope resolution in Python determines how variables are looked up and where they can be accessed. Python follows the LEGB rule for name resolution:
