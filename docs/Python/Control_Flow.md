@@ -1205,7 +1205,7 @@ A recursive function is a function that calls itself in its definition. It's a p
 
 !!! example
 
-
+    **Factorial Function: **
 
     ```py 
     def factorial(n):
