@@ -396,82 +396,60 @@ For basic arithmetic calculations, symbols such as **(+), (-), (*), (/)** can be
         3.46
         ```
 
-    === "Subtraction (-)"
+    === "```abs(number)```"
+
+        Returns the absolute (positive) value.
 
         ```py
-        a = 10 - 4
-        print(a)  
+        print(abs(-7))           # 7
         ```
 
         Output:
 
         ```
-        6
+        7
         ```
 
-    === "Multiplication (*)"
+    === "```pow(x, y)```"
+
+        Raises ```x``` to the power ```y``` (same as ```x ** y```)
 
         ```py
-        a = 6 * 7
-        print(a)  
-        ```
-
-        Output:
-
-        ```
-        42
-        ```
-
-    === "Division (/)"
-
-        ```py
-        a = 10 / 2
-        print(a)  #(Always returns float)
-        ```
-
-        Output:
-
-        ```
-        5.0
-        ```
-
-    === "Floor Division (//)"
-
-        ```py
-        a = 10 // 3
-        print(a)  #(drops the decimal part)
-        ```
-
-        Output:
-
-        ```
-        3
-        ```  
-
-    === "Modulus / Remainder (%)"
-
-        ```py
-        a = 10 % 3
-        print(a)  #(remainder of the division)
-        ```
-
-        Output:
-
-        ```
-        1
-        ```  
-
-    === "Exponentiation (**)"
-
-        ```py
-        a = 2 ** 3
-        print(a)  #(2 to the power of 3)
+        print(pow(2, 3))         # 8
         ```
 
         Output:
 
         ```
         8
+        ```
+
+    === "```max(a, b, ...)```"
+
+        Returns the largest of the arguments.
+
+        ```py
+        print(max(3, 9, 1))      # 9
+        ```
+
+        Output:
+
+        ```
+        9
+        ```
+
+    === "```min(a, b, ...)```"
+
+        Returns the smallest of the arguments.
+
+        ```py
+        print(min(3, 9, 1))      # 1
+        ```
+
+        Output:
+
+        ```
+        1
         ```  
 
 
