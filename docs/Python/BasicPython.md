@@ -381,7 +381,7 @@ For basic arithmetic calculations, symbols such as **(+), (-), (*), (/)** can be
 
     === "```round(number, [ndigits])```"
 
-        **Rounds a number to the nearest integer or to a given number of decimal places.**
+        Rounds a number to the nearest integer or to a given number of decimal places.
 
         ```py
         print(round(3.456))      # 3
