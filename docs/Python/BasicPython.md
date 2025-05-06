@@ -377,7 +377,102 @@ For basic arithmetic calculations, symbols such as **(+), (-), (*), (/)** can be
         8
         ```  
 
+!!! example "Built-in Functions" 
 
+    === "```round(number, [ndigits])```"
+
+        **Rounds a number to the nearest integer or to a given number of decimal places.**
+
+        ```py
+        print(round(3.456))      # 3
+        print(round(3.456, 2))   # 3.46
+
+        ```
+
+        Output:
+
+        ```
+        3
+        3.46
+        ```
+
+    === "Subtraction (-)"
+
+        ```py
+        a = 10 - 4
+        print(a)  
+        ```
+
+        Output:
+
+        ```
+        6
+        ```
+
+    === "Multiplication (*)"
+
+        ```py
+        a = 6 * 7
+        print(a)  
+        ```
+
+        Output:
+
+        ```
+        42
+        ```
+
+    === "Division (/)"
+
+        ```py
+        a = 10 / 2
+        print(a)  #(Always returns float)
+        ```
+
+        Output:
+
+        ```
+        5.0
+        ```
+
+    === "Floor Division (//)"
+
+        ```py
+        a = 10 // 3
+        print(a)  #(drops the decimal part)
+        ```
+
+        Output:
+
+        ```
+        3
+        ```  
+
+    === "Modulus / Remainder (%)"
+
+        ```py
+        a = 10 % 3
+        print(a)  #(remainder of the division)
+        ```
+
+        Output:
+
+        ```
+        1
+        ```  
+
+    === "Exponentiation (**)"
+
+        ```py
+        a = 2 ** 3
+        print(a)  #(2 to the power of 3)
+        ```
+
+        Output:
+
+        ```
+        8
+        ```  
 
 
 
