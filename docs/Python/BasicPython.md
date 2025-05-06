@@ -279,3 +279,108 @@ User input is a function that prompts the user to enter data into the Python pro
         You are 31 years old!
         ```
 
+
+
+## Basic Arithmetic
+For basic arithmetic calculations, symbols such as +, -, *, / can be used. Other operators include the modulus operator (%), where the remainder of the operand is the resultant and we also have power (**). There are many other useful functions such as round function, absolute value function, power exponent function, maximum function, minimum function and more. 
+
+!!! example "Arithmetic Operators" 
+
+    === "Addition (+)"
+
+        ```py
+        a = 5 + 3
+        print(a)  
+        ```
+
+        Output:
+
+        ```
+        8
+        ```
+
+    === "Subtraction (-)"
+
+        ```py
+        a = 10 - 4
+        print(a)  
+        ```
+
+        Output:
+
+        ```
+        6
+        ```
+
+    === "Multiplication (*)"
+
+        ```py
+        a = 6 * 7
+        print(a)  
+        ```
+
+        Output:
+
+        ```
+        42
+        ```
+
+    === "Division (/)"
+
+        ```py
+        a = 10 / 2
+        print(a)  #(Always returns float)
+        ```
+
+        Output:
+
+        ```
+        5.0
+        ```
+
+    === "Floor Division (//)"
+
+        ```py
+        a = 10 // 3
+        print(a)  #(drops the decimal part)
+        ```
+
+        Output:
+
+        ```
+        3
+        ```  
+
+    === "Modulus / Remainder (%)"
+
+        ```py
+        a = 10 % 3
+        print(a)  #(remainder of the division)
+        ```
+
+        Output:
+
+        ```
+        1
+        ```  
+
+    === "Exponentiation (**)"
+
+        ```py
+        a = 2 ** 3
+        print(a)  #(2 to the power of 3)
+        ```
+
+        Output:
+
+        ```
+        8
+        ```  
+
+
+
+
+
+
+
+
